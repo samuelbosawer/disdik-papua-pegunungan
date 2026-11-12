@@ -1,0 +1,82 @@
+* { font-family: 'Plus Jakarta Sans', sans-serif; }
+html { scroll-behavior: smooth; scroll-padding-top: 7rem; }
+body { -webkit-font-smoothing: antialiased; }
+[hidden] { display: none !important; }
+
+/* Scrollbar tipis */
+.scroll-slim { scrollbar-width: thin; scrollbar-color: #cbd5e1 transparent; }
+.scroll-slim::-webkit-scrollbar { width: 6px; height: 6px; }
+.scroll-slim::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 9999px; }
+
+/* Pola latar halus bernuansa motif noken */
+.pattern-noken {
+  background-image:
+    radial-gradient(circle at 1px 1px, rgb(255 255 255 / 0.12) 1px, transparent 0);
+  background-size: 22px 22px;
+}
+.pattern-dots {
+  background-image: radial-gradient(circle at 1px 1px, rgb(11 128 88 / 0.10) 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+/* Pita kuning — mengambil warna pita pada lambang */
+.ribbon { background: linear-gradient(90deg, #0a6648 0%, #0b8058 40%, #2558e0 100%); }
+.gold-bar { height: 4px; background: linear-gradient(90deg, #fde010, #ffe93d 50%, #fde010); }
+
+/* Dropdown navigasi desktop */
+.nav-item:hover > .nav-drop,
+.nav-item:focus-within > .nav-drop { opacity: 1; visibility: visible; transform: translateY(0); }
+.nav-drop { opacity: 0; visibility: hidden; transform: translateY(6px); transition: all .18s ease; }
+
+/* Slider hero */
+.slide { opacity: 0; visibility: hidden; transition: opacity .8s ease, visibility .8s; }
+.slide.is-active { opacity: 1; visibility: visible; }
+.slide.is-active .slide-img { animation: kenburns 9s ease-out forwards; }
+.slide.is-active .slide-copy > * { animation: rise .7s ease both; }
+.slide.is-active .slide-copy > *:nth-child(2) { animation-delay: .1s; }
+.slide.is-active .slide-copy > *:nth-child(3) { animation-delay: .2s; }
+.slide.is-active .slide-copy > *:nth-child(4) { animation-delay: .3s; }
+@keyframes kenburns { from { transform: scale(1.08); } to { transform: scale(1); } }
+@keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+
+/* Muncul saat discroll */
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+.reveal.is-visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .slide.is-active .slide-img, .slide.is-active .slide-copy > * { animation: none; }
+  html { scroll-behavior: auto; }
+}
+
+/* Tab */
+.tab-btn[aria-selected="true"] { background: #0b8058; color: #fff; border-color: #0b8058; }
+
+/* Accordion <details> */
+details > summary { list-style: none; cursor: pointer; }
+details > summary::-webkit-details-marker { display: none; }
+details[open] .acc-icon { transform: rotate(180deg); }
+.acc-icon { transition: transform .2s ease; }
+
+/* Bagan struktur organisasi */
+.org-line-v { width: 2px; background: #a8e9c9; margin: 0 auto; }
+.org-row { position: relative; }
+@media (min-width: 1024px) {
+  .org-row::before { content: ""; position: absolute; top: 0; left: var(--l, 10%); right: var(--r, 10%); height: 2px; background: #a8e9c9; }
+  .org-row > * { position: relative; }
+  .org-row > *::before { content: ""; position: absolute; top: -1.25rem; left: 50%; width: 2px; height: 1.25rem; background: #a8e9c9; }
+}
+
+/* Konten artikel */
+.prose-body p { margin-bottom: 1rem; line-height: 1.8; }
+
+/* Kalender */
+.cal-day.has-event { background: #d4f5e3; color: #0a6648; font-weight: 700; }
+.cal-day.is-today { outline: 2px solid #2558e0; outline-offset: -2px; }
+
+/* Ticker pengumuman */
+.ticker { animation: ticker 40s linear infinite; }
+.ticker:hover { animation-play-state: paused; }
+@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .ticker { animation: none; } }
+
+@media print { .no-print { display: none !important; } }

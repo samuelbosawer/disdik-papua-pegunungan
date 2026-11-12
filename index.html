@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda - Dinas Pendidikan dan Kebudayaan Provinsi Papua Pegunungan</title>
+  <meta name="description" content="Situs resmi Dinas Pendidikan dan Kebudayaan Provinsi Papua Pegunungan: profil, layanan publik, berita, PPID, dan transparansi kinerja.">
+  <meta property="og:title" content="Dinas Pendidikan dan Kebudayaan Provinsi Papua Pegunungan">
+  <meta property="og:image" content="assets/img/logo.png">
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tw-config.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="beranda" class="min-h-screen bg-slate-50 text-slate-800">
+<div id="site-header"></div>
+
+<main>
+  <!-- ============ HERO SLIDER ============ -->
+  <section id="hero" class="relative isolate h-[560px] overflow-hidden bg-brand-900 text-white sm:h-[600px]" aria-roledescription="carousel" aria-label="Sorotan utama">
+    <!-- Slide 1 -->
+    <div class="slide is-active absolute inset-0" aria-roledescription="slide">
+      <img src="https://picsum.photos/seed/pp-gedung/1600/900" alt="" class="slide-img absolute inset-0 -z-20 h-full w-full object-cover">
+      <div class="absolute inset-0 -z-10 bg-gradient-to-br from-brand-900/95 via-brand-800/85 to-edu-800/80"></div>
+      <div class="pattern-noken absolute inset-0 -z-10"></div>
+      <div class="mx-auto grid h-full max-w-7xl items-center gap-10 px-4 pb-24 sm:px-6 lg:grid-cols-[minmax(0,1fr)_auto] lg:px-8">
+        <div class="slide-copy max-w-3xl">
+          <span class="inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-xs font-bold uppercase tracking-wider"><i class="fa-solid fa-landmark"></i>Selamat Datang</span>
+          <h1 class="mt-4 text-3xl font-extrabold leading-tight sm:text-5xl">Dinas Pendidikan dan Kebudayaan <span class="text-gold-300">Provinsi Papua Pegunungan</span></h1>
+          <p class="mt-4 max-w-2xl text-sm text-white/85 sm:text-base">Membangun sumber daya manusia pegunungan yang cerdas, berkarakter, dan berbudaya — melayani pendidikan menengah, pendidikan khusus, dan kebudayaan di 8 kabupaten.</p>
+          <div class="mt-7 flex flex-wrap gap-2">
+            <a href="profil.html" class="inline-flex items-center gap-2 rounded-lg bg-white px-4 py-2.5 text-sm font-bold text-brand-700 shadow-sm hover:bg-brand-50"><i class="fa-solid fa-building-columns"></i>Profil Dinas</a>
+            <a href="layanan.html" class="inline-flex items-center gap-2 rounded-lg border border-white/40 bg-white/10 px-4 py-2.5 text-sm font-bold text-white hover:bg-white/20"><i class="fa-solid fa-clipboard-list"></i>Layanan Publik</a>
+          </div>
+        </div>
+        <div class="hidden lg:block"><img src="assets/img/logo.png" alt="Lambang Provinsi Papua Pegunungan" class="h-72 w-72 object-contain drop-shadow-2xl"></div>
+      </div>
+    </div>
+    <!-- Slide 2 -->
+    <div class="slide absolute inset-0" aria-roledescription="slide">
+      <img src="https://picsum.photos/seed/pp-wisuda/1600/900" alt="" class="slide-img absolute inset-0 -z-20 h-full w-full object-cover">
+      <div class="absolute inset-0 -z-10 bg-gradient-to-r from-edu-900/95 via-edu-800/80 to-brand-800/60"></div>
+      <div class="mx-auto flex h-full max-w-7xl items-center px-4 pb-24 sm:px-6 lg:px-8">
+        <div class="slide-copy max-w-2xl">
+          <span class="inline-flex items-center gap-2 rounded-full bg-gold-400 px-3 py-1 text-xs font-extrabold uppercase tracking-wider text-slate-900"><i class="fa-solid fa-award"></i>Program Unggulan</span>
+          <h2 class="mt-4 text-3xl font-extrabold leading-tight sm:text-5xl">Beasiswa &amp; Bantuan Studi Dana Otsus</h2>
+          <p class="mt-4 text-sm text-white/85 sm:text-base">Beasiswa Siswa Unggul Papua, Afirmasi Pendidikan Tinggi (ADIK), hingga bantuan studi akhir — kini terdata dan terpantau melalui Database Beasiswa Papua Pegunungan.</p>
+          <div class="mt-7 flex flex-wrap gap-2">
+            <a href="https://dbbeasiswa.nokensoft.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-lg bg-gold-400 px-4 py-2.5 text-sm font-extrabold text-slate-900 hover:bg-gold-300"><i class="fa-solid fa-graduation-cap"></i>Buka DB Beasiswa</a>
+            <a href="berita.html#pengumuman" class="inline-flex items-center gap-2 rounded-lg border border-white/40 bg-white/10 px-4 py-2.5 text-sm font-bold text-white hover:bg-white/20"><i class="fa-solid fa-bullhorn"></i>Pengumuman</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Slide 3 -->
+    <div class="slide absolute inset-0" aria-roledescription="slide">
+      <img src="https://picsum.photos/seed/pp-lembah/1600/900" alt="" class="slide-img absolute inset-0 -z-20 h-full w-full object-cover">
+      <div class="absolute inset-0 -z-10 bg-gradient-to-r from-brand-950/95 via-brand-900/80 to-transparent"></div>
+      <div class="mx-auto flex h-full max-w-7xl items-center px-4 pb-24 sm:px-6 lg:px-8">
+        <div class="slide-copy max-w-2xl">
+          <span class="inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-xs font-bold uppercase tracking-wider"><i class="fa-solid fa-school"></i>Infrastruktur Pendidikan</span>
+          <h2 class="mt-4 text-3xl font-extrabold leading-tight sm:text-5xl">Baliem Global Training Center</h2>
+          <p class="mt-4 text-sm text-white/85 sm:text-base">Sekolah berasrama di Jayawijaya yang dibangun dengan alokasi Dana Otsus — pusat pendidikan unggulan bagi putra-putri terbaik pegunungan.</p>
+          <div class="mt-7"><button type="button" data-berita="3" class="inline-flex items-center gap-2 rounded-lg bg-white px-4 py-2.5 text-sm font-bold text-brand-700 hover:bg-brand-50"><i class="fa-solid fa-newspaper"></i>Lihat Progres</button></div>
+        </div>
+      </div>
+    </div>
+    <!-- Slide 4 -->
+    <div class="slide absolute inset-0" aria-roledescription="slide">
+      <img src="https://picsum.photos/seed/pp-kelas/1600/900" alt="" class="slide-img absolute inset-0 -z-20 h-full w-full object-cover">
+      <div class="absolute inset-0 -z-10 bg-gradient-to-br from-edu-900/90 via-brand-900/85 to-brand-800/80"></div>
+      <div class="mx-auto flex h-full max-w-7xl items-center px-4 pb-24 sm:px-6 lg:px-8">
+        <div class="slide-copy max-w-2xl">
+          <span class="inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-xs font-bold uppercase tracking-wider"><i class="fa-solid fa-laptop"></i>Digitalisasi &amp; Karakter</span>
+          <h2 class="mt-4 text-3xl font-extrabold leading-tight sm:text-5xl">Pendidikan Digital yang Humanis</h2>
+          <p class="mt-4 text-sm text-white/85 sm:text-base">Bersama BPMP Papua, kami menghadirkan pembelajaran berbasis digital yang tetap menjunjung karakter dan kearifan lokal.</p>
+          <div class="mt-7"><a href="berita.html" class="inline-flex items-center gap-2 rounded-lg border border-white/40 bg-white/10 px-4 py-2.5 text-sm font-bold text-white hover:bg-white/20"><i class="fa-solid fa-arrow-right"></i>Berita Kegiatan</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kontrol slider -->
+    <div class="absolute inset-x-0 bottom-24 z-10 mx-auto flex max-w-7xl items-center justify-between px-4 sm:bottom-28 sm:px-6 lg:px-8">
+      <div id="hero-dots" class="flex gap-2" role="tablist" aria-label="Pilih slide"></div>
+      <div class="flex gap-2">
+        <button type="button" id="hero-prev" class="flex h-10 w-10 items-center justify-center rounded-full border border-white/40 bg-white/10 hover:bg-white/25" aria-label="Slide sebelumnya"><i class="fa-solid fa-chevron-left"></i></button>
+        <button type="button" id="hero-next" class="flex h-10 w-10 items-center justify-center rounded-full border border-white/40 bg-white/10 hover:bg-white/25" aria-label="Slide berikutnya"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ticker pengumuman -->
+  <div class="relative z-10 -mt-16 sm:-mt-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-stretch overflow-hidden rounded-xl bg-white shadow-float ring-1 ring-slate-200">
+        <a href="berita.html#pengumuman" class="flex shrink-0 items-center gap-2 bg-gold-400 px-4 text-xs font-extrabold uppercase tracking-wider text-slate-900"><i class="fa-solid fa-bullhorn"></i><span class="hidden sm:inline">Pengumuman</span></a>
+        <div class="min-w-0 flex-1 overflow-hidden py-3">
+          <div id="ticker" class="ticker flex w-max gap-10 whitespace-nowrap pl-4 text-sm font-semibold text-slate-700"></div>
+        </div>
+      </div>
+
+      <!-- ============ QUICK LINKS ============ -->
+      <div class="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-8">
+        <a href="https://dbbeasiswa.nokensoft.com" target="_blank" rel="noopener" class="reveal group flex flex-col items-center gap-2 rounded-xl border border-slate-200 bg-white p-4 text-center shadow-card transition hover:-translate-y-1 hover:border-brand-300 hover:shadow-float">
+          <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-50 text-xl text-brand-600 group-hover:bg-brand-600 group-hover:text-white"><i class="fa-solid fa-graduation-cap"></i></span>
+          <span class="text-xs font-bold text-slate-700">DB Beasiswa</span>
+        </a>
+        <a href="layanan.html#layanan-legalisir" class="reveal group flex flex-col items-center gap-2 rounded-xl border border-slate-200 bg-white p-4 text-center shadow-card transition hover:-translate-y-1 hover:border-brand-300 hover:shadow-float">
+          <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-edu-50 text-xl text-edu-600 group-hover:bg-edu-600 group-hover:text-white"><i class="fa-solid fa-stamp"></i></span>
+          <span class="text-xs font-bold text-slate-700">Legalisir Ijazah</span>
+        </a>
+        <a href="layanan.html#layanan-mutasi-siswa" class="reveal group flex flex-col items-center gap-2 rounded-xl border border-slate-200 bg-white p-4 text-center shadow-card transition hover:-translate-y-1 hover:border-brand-300 hover:shadow-float">
+          <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-50 text-xl text-brand-600 group-hover:bg-brand-600 group-hover:text-white"><i class="fa-solid fa-right-left"></i></span>
+          <span class="text-xs font-bold text-slate-700">Mutasi Siswa</span>
+        </a>
+        <a href="layanan.html#layanan-mutasi-guru" class="reveal group flex flex-col items-center gap-2 rounded-xl border border-slate-200 bg-white p-4 text-center shadow-card transition hover:-translate-y-1 hover:border-brand-300 hover:shadow-float">
+          <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-edu-50 text-xl text-edu-600 group-hover:bg-edu-600 group-hover:text-white"><i class="fa-solid fa-chalkboard-user"></i></span>
+          <span class="text-xs font-bold text-slate-700">Layanan Guru</span>
+        </a>
+        <a href="layanan.html#online" class="reveal group flex flex-col items-center gap-2 rounded-xl border border-slate-200 bg-white p-4 text-center shadow-card transition hover:-translate-y-1 hover:border-brand-300 hover:shadow-float">
+          <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-50 text-xl text-brand-600 group-hover:bg-brand-600 group-hover:text-white"><i class="fa-solid fa-database"></i></span>
+          <span class="text-xs font-bold text-slate-700">Dapodik</span>
+        </a>
+        <a href="ppid.html#permohonan" class="reveal group flex flex-col items-center gap-2 rounded-xl border border-slate-200 bg-white p-4 text-center shadow-card transition hover:-translate-y-1 hover:border-brand-300 hover:shadow-float">
+          <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-edu-50 text-xl text-edu-600 group-hover:bg-edu-600 group-hover:text-white"><i class="fa-solid fa-file-signature"></i></span>
+          <span class="text-xs font-bold text-slate-700">Permohonan Informasi</span>
+        </a>
+        <a href="layanan.html#unduhan" class="reveal group flex flex-col items-center gap-2 rounded-xl border border-slate-200 bg-white p-4 text-center shadow-card transition hover:-translate-y-1 hover:border-brand-300 hover:shadow-float">
+          <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-50 text-xl text-brand-600 group-hover:bg-brand-600 group-hover:text-white"><i class="fa-solid fa-file-arrow-down"></i></span>
+          <span class="text-xs font-bold text-slate-700">Unduh Formulir</span>
+        </a>
+        <a href="kontak.html#pengaduan" class="reveal group flex flex-col items-center gap-2 rounded-xl border border-slate-200 bg-white p-4 text-center shadow-card transition hover:-translate-y-1 hover:border-rose-300 hover:shadow-float">
+          <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-rose-50 text-xl text-rose-600 group-hover:bg-rose-600 group-hover:text-white"><i class="fa-solid fa-headset"></i></span>
+          <span class="text-xs font-bold text-slate-700">Pengaduan</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ SAMBUTAN KEPALA DINAS ============ -->
+  <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+    <div class="reveal grid items-center gap-10 overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-card sm:p-10 lg:grid-cols-[320px_minmax(0,1fr)]">
+      <div class="relative mx-auto w-full max-w-[300px]">
+        <div class="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-gold-300 via-brand-400 to-edu-500 opacity-80"></div>
+        <div class="relative flex aspect-[3/4] flex-col items-center justify-end overflow-hidden rounded-3xl bg-gradient-to-b from-edu-100 to-brand-100">
+          <!-- Ganti dengan foto resmi: <img src="assets/img/kadis.jpg" ...> -->
+          <i class="fa-solid fa-user-tie absolute top-1/4 text-[120px] text-brand-700/25"></i>
+          <div class="relative w-full bg-gradient-to-t from-brand-950/90 to-transparent p-4 pt-12 text-white">
+            <p class="text-lg font-extrabold">Simon Sembor</p>
+            <p class="text-xs font-semibold text-gold-300">Plt. Kepala Dinas</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="text-xs font-bold uppercase tracking-wider text-brand-600">Sambutan Kepala Dinas</p>
+        <h2 class="mt-2 text-2xl font-extrabold text-slate-900 sm:text-3xl">Bangkit Bersama Membangun Pendidikan Pegunungan</h2>
+        <i class="fa-solid fa-quote-left mt-6 text-3xl text-gold-400"></i>
+        <div class="mt-3 space-y-3 text-[15px] leading-relaxed text-slate-600">
+          <p>Selamat datang di situs resmi Dinas Pendidikan dan Kebudayaan Provinsi Papua Pegunungan. Sebagai provinsi yang masih muda, kami bertekad membangun fondasi pendidikan yang kokoh — mulai dari data guru dan murid yang akurat, sekolah yang layak, hingga kesempatan studi seluas-luasnya bagi anak-anak pegunungan.</p>
+          <p>Melalui Dana Otonomi Khusus, kami memperkuat program beasiswa, membangun sekolah berasrama seperti Baliem Global Training Center, serta menghadirkan pendidikan digital yang humanis dan berkarakter tanpa meninggalkan akar budaya kita.</p>
+          <p>Situs ini hadir sebagai wujud keterbukaan informasi dan pelayanan publik. Mari bersama-sama mengawal pendidikan di delapan kabupaten demi generasi Papua Pegunungan yang unggul.</p>
+        </div>
+        <div class="mt-6 flex flex-wrap items-center justify-between gap-4 border-t border-slate-100 pt-5">
+          <div>
+            <p class="font-extrabold text-slate-900">Simon Sembor</p>
+            <p class="text-sm text-slate-500">Plt. Kepala Dinas Pendidikan dan Kebudayaan</p>
+          </div>
+          <a href="profil.html#pimpinan" class="inline-flex items-center gap-2 rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm font-bold text-slate-700 hover:bg-slate-50">Profil Pimpinan <i class="fa-solid fa-arrow-right text-xs"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROGRAM UNGGULAN ============ -->
+  <section class="bg-white py-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="reveal mx-auto max-w-2xl text-center">
+        <p class="text-xs font-bold uppercase tracking-wider text-brand-600">Program &amp; Kebijakan Utama</p>
+        <h2 class="mt-2 text-2xl font-extrabold text-slate-900 sm:text-3xl">Empat Pilar Percepatan SDM Papua Pegunungan</h2>
+        <p class="mt-3 text-sm text-slate-500">Arah kebijakan dinas untuk meningkatkan akses, mutu, dan relevansi pendidikan di wilayah pegunungan.</p>
+      </div>
+      <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="reveal rounded-2xl border border-slate-200 bg-slate-50 p-6 transition hover:border-brand-300 hover:bg-white hover:shadow-float">
+          <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-600 text-xl text-white"><i class="fa-solid fa-users-viewfinder"></i></span>
+          <h3 class="mt-4 font-extrabold text-slate-900">Pendataan Guru &amp; Murid</h3>
+          <p class="mt-2 text-sm text-slate-600">Penguatan data pokok pendidikan di seluruh kabupaten sebagai dasar perencanaan dan percepatan kualitas SDM.</p>
+        </div>
+        <div class="reveal rounded-2xl border border-slate-200 bg-slate-50 p-6 transition hover:border-brand-300 hover:bg-white hover:shadow-float">
+          <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-gold-400 text-xl text-slate-900"><i class="fa-solid fa-award"></i></span>
+          <h3 class="mt-4 font-extrabold text-slate-900">Beasiswa &amp; Bantuan Studi</h3>
+          <p class="mt-2 text-sm text-slate-600">Beasiswa Siswa Unggul Papua, ADIK, dan bantuan studi akhir bagi ribuan mahasiswa dari Dana Otsus.</p>
+          <a href="https://dbbeasiswa.nokensoft.com" target="_blank" rel="noopener" class="mt-3 inline-flex text-sm font-bold text-edu-600 hover:underline">DB Beasiswa <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-[10px]"></i></a>
+        </div>
+        <div class="reveal rounded-2xl border border-slate-200 bg-slate-50 p-6 transition hover:border-brand-300 hover:bg-white hover:shadow-float">
+          <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-edu-600 text-xl text-white"><i class="fa-solid fa-school"></i></span>
+          <h3 class="mt-4 font-extrabold text-slate-900">Infrastruktur Pendidikan</h3>
+          <p class="mt-2 text-sm text-slate-600">Pembangunan fasilitas seperti Baliem Global Training Center, sekolah berasrama di Jayawijaya.</p>
+        </div>
+        <div class="reveal rounded-2xl border border-slate-200 bg-slate-50 p-6 transition hover:border-brand-300 hover:bg-white hover:shadow-float">
+          <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-800 text-xl text-white"><i class="fa-solid fa-laptop-code"></i></span>
+          <h3 class="mt-4 font-extrabold text-slate-900">Digitalisasi &amp; Karakter</h3>
+          <p class="mt-2 text-sm text-slate-600">Pendidikan berbasis digital yang humanis dan berkarakter, bekerja sama dengan BPMP Papua.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BIDANG KERJA ============ -->
+  <section class="relative overflow-hidden bg-brand-800 py-16 text-white">
+    <div class="pattern-noken absolute inset-0"></div>
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider text-gold-300">Bidang Kerja</p>
+          <h2 class="mt-2 text-2xl font-extrabold sm:text-3xl">Siapa Melayani Apa</h2>
+          <p class="mt-2 max-w-2xl text-sm text-white/75">Kenali bidang di lingkungan dinas agar urusan Anda langsung tertuju ke unit yang tepat.</p>
+        </div>
+        <a href="profil.html#struktur" class="inline-flex items-center gap-2 rounded-lg border border-white/40 bg-white/10 px-4 py-2 text-sm font-bold hover:bg-white/20"><i class="fa-solid fa-sitemap"></i>Struktur Organisasi</a>
+      </div>
+      <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="reveal rounded-2xl border border-white/15 bg-white/10 p-5 backdrop-blur">
+          <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-gold-400 text-lg text-slate-900"><i class="fa-solid fa-folder-open"></i></span>
+          <h3 class="mt-4 font-extrabold">Sekretariat</h3>
+          <p class="mt-1 text-sm text-white/75">Administrasi umum, kepegawaian, keuangan, perencanaan, serta pelayanan informasi publik (PPID).</p>
+        </div>
+        <div class="reveal rounded-2xl border border-white/15 bg-white/10 p-5 backdrop-blur">
+          <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-gold-400 text-lg text-slate-900"><i class="fa-solid fa-school"></i></span>
+          <h3 class="mt-4 font-extrabold">Pembinaan SMA</h3>
+          <p class="mt-1 text-sm text-white/75">Kurikulum, peserta didik, sarana prasarana SMA, legalisir ijazah, dan mutasi siswa.</p>
+        </div>
+        <div class="reveal rounded-2xl border border-white/15 bg-white/10 p-5 backdrop-blur">
+          <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-gold-400 text-lg text-slate-900"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+          <h3 class="mt-4 font-extrabold">Pembinaan SMK</h3>
+          <p class="mt-1 text-sm text-white/75">Pendidikan vokasi, kemitraan dunia usaha dan industri, serta praktik kerja lapangan.</p>
+        </div>
+        <div class="reveal rounded-2xl border border-white/15 bg-white/10 p-5 backdrop-blur">
+          <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-gold-400 text-lg text-slate-900"><i class="fa-solid fa-hands-holding-child"></i></span>
+          <h3 class="mt-4 font-extrabold">Pendidikan Khusus</h3>
+          <p class="mt-1 text-sm text-white/75">Layanan SLB dan pendidikan inklusif bagi peserta didik berkebutuhan khusus.</p>
+        </div>
+        <div class="reveal rounded-2xl border border-white/15 bg-white/10 p-5 backdrop-blur">
+          <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-gold-400 text-lg text-slate-900"><i class="fa-solid fa-chalkboard-user"></i></span>
+          <h3 class="mt-4 font-extrabold">Guru &amp; Tenaga Kependidikan</h3>
+          <p class="mt-1 text-sm text-white/75">Pendataan, peningkatan kompetensi, dan mutasi guru SMA, SMK, dan SLB.</p>
+        </div>
+        <div class="reveal rounded-2xl border border-white/15 bg-white/10 p-5 backdrop-blur">
+          <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-gold-400 text-lg text-slate-900"><i class="fa-solid fa-masks-theater"></i></span>
+          <h3 class="mt-4 font-extrabold">Kebudayaan</h3>
+          <p class="mt-1 text-sm text-white/75">Pelestarian tradisi, cagar budaya, muatan lokal, dan pembinaan kesenian daerah.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BERITA & PENGUMUMAN ============ -->
+  <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+    <div class="flex flex-wrap items-end justify-between gap-3">
+      <div>
+        <p class="text-xs font-bold uppercase tracking-wider text-brand-600">Media Center</p>
+        <h2 class="mt-2 text-2xl font-extrabold text-slate-900 sm:text-3xl">Berita &amp; Pengumuman Terbaru</h2>
+      </div>
+      <a href="berita.html" class="text-sm font-bold text-edu-600 hover:underline">Semua berita <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="mt-8 grid gap-6 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
+      <div id="home-berita" class="grid gap-5 sm:grid-cols-2"></div>
+      <aside class="reveal flex flex-col rounded-2xl border border-slate-200 bg-white shadow-card">
+        <div class="flex items-center gap-2 border-b border-slate-100 px-5 py-4">
+          <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-gold-100 text-gold-700"><i class="fa-solid fa-bullhorn"></i></span>
+          <h3 class="font-extrabold text-slate-900">Pengumuman</h3>
+        </div>
+        <ul id="home-pengumuman" class="flex-1 divide-y divide-slate-100"></ul>
+        <div class="border-t border-slate-100 p-4">
+          <a href="berita.html#pengumuman" class="block rounded-lg bg-slate-50 py-2 text-center text-sm font-bold text-brand-700 hover:bg-brand-50">Lihat semua pengumuman</a>
+        </div>
+        <div class="border-t border-slate-100 p-5">
+          <h3 class="flex items-center gap-2 font-extrabold text-slate-900"><i class="fa-regular fa-calendar-days text-brand-600"></i>Agenda Terdekat</h3>
+          <ul id="home-agenda" class="mt-3 space-y-3"></ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ CTA DB BEASISWA ============ -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="reveal relative grid items-center gap-8 overflow-hidden rounded-3xl bg-gradient-to-br from-edu-700 via-edu-800 to-brand-800 p-8 text-white sm:p-12 lg:grid-cols-[minmax(0,1fr)_auto]">
+      <div class="pattern-noken absolute inset-0"></div>
+      <div class="relative">
+        <span class="inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-xs font-bold uppercase tracking-wider"><i class="fa-solid fa-laptop"></i>Aplikasi Resmi</span>
+        <h2 class="mt-4 text-2xl font-extrabold sm:text-4xl">Database Beasiswa Papua Pegunungan</h2>
+        <p class="mt-3 max-w-2xl text-sm text-white/85 sm:text-base">Pendaftaran, verifikasi berkas, laporan studi per semester, hingga status pencairan bantuan — semua dalam satu aplikasi bagi penerima beasiswa dan operator dinas.</p>
+        <ul class="mt-5 grid gap-2 text-sm sm:grid-cols-2">
+          <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-300"></i>Data penerima terpusat &amp; terverifikasi</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-300"></i>Pelaporan studi tiap semester</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-300"></i>Pemantauan status pencairan</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-300"></i>Layanan tiket bantuan</li>
+        </ul>
+      </div>
+      <div class="relative flex flex-col items-start gap-3 lg:items-center">
+        <img src="assets/img/logo.png" alt="" class="hidden h-28 w-28 object-contain drop-shadow-xl lg:block">
+        <a href="https://dbbeasiswa.nokensoft.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-xl bg-gold-400 px-6 py-3 font-extrabold text-slate-900 shadow-lg hover:bg-gold-300"><i class="fa-solid fa-right-to-bracket"></i>Masuk Aplikasi</a>
+        <span class="text-xs text-white/70">dbbeasiswa.nokensoft.com</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WILAYAH KERJA ============ -->
+  <section class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+    <div class="reveal grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)] lg:items-center">
+      <div>
+        <p class="text-xs font-bold uppercase tracking-wider text-brand-600">Wilayah Kerja</p>
+        <h2 class="mt-2 text-2xl font-extrabold text-slate-900 sm:text-3xl">8 Kabupaten, Satu Tekad</h2>
+        <p class="mt-3 text-sm leading-relaxed text-slate-600">Berkedudukan di Wamena, Kabupaten Jayawijaya, dinas melayani satuan pendidikan menengah dan pendidikan khusus di seluruh kabupaten Provinsi Papua Pegunungan — wilayah dengan bentang alam pegunungan yang menantang namun kaya budaya.</p>
+      </div>
+      <div id="kabupaten" class="grid grid-cols-2 gap-3 sm:grid-cols-4"></div>
+    </div>
+  </section>
+
+  <!-- ============ MEDIA SOSIAL & PENGADUAN ============ -->
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="grid gap-6 lg:grid-cols-2">
+      <div class="reveal rounded-3xl border border-slate-200 bg-white p-6 shadow-card sm:p-8">
+        <h2 class="text-xl font-extrabold text-slate-900">Ikuti Kanal Resmi Kami</h2>
+        <p class="mt-1 text-sm text-slate-500">Informasi terbaru kegiatan dinas di media sosial resmi.</p>
+        <div id="sosmed" class="mt-5 grid gap-3 sm:grid-cols-2"></div>
+      </div>
+      <div class="reveal relative overflow-hidden rounded-3xl bg-gradient-to-br from-rose-600 to-rose-700 p-6 text-white sm:p-8">
+        <i class="fa-solid fa-headset absolute -bottom-6 -right-4 text-[140px] text-white/10"></i>
+        <h2 class="relative text-xl font-extrabold">Layanan Pengaduan Masyarakat</h2>
+        <p class="relative mt-2 text-sm text-white/85">Sampaikan keluhan, aspirasi, atau laporan dugaan pelanggaran terkait layanan pendidikan. Identitas pelapor dijamin kerahasiaannya.</p>
+        <div class="relative mt-6 grid gap-3 sm:grid-cols-2">
+          <a href="kontak.html#pengaduan" class="flex items-center gap-3 rounded-xl bg-white p-4 text-slate-800 hover:bg-rose-50">
+            <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-rose-100 text-rose-600"><i class="fa-solid fa-pen-to-square"></i></span>
+            <span><span class="block text-sm font-extrabold">Formulir Pengaduan</span><span class="block text-xs text-slate-500">Isi secara online</span></span>
+          </a>
+          <a href="https://www.lapor.go.id" target="_blank" rel="noopener" class="flex items-center gap-3 rounded-xl bg-white p-4 text-slate-800 hover:bg-rose-50">
+            <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-rose-100 text-rose-600"><i class="fa-solid fa-flag"></i></span>
+            <span><span class="block text-sm font-extrabold">SP4N-LAPOR!</span><span class="block text-xs text-slate-500">Kanal nasional</span></span>
+          </a>
+          <a href="kontak.html#pengaduan" class="flex items-center gap-3 rounded-xl bg-white p-4 text-slate-800 hover:bg-rose-50">
+            <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-rose-100 text-rose-600"><i class="fa-solid fa-user-secret"></i></span>
+            <span><span class="block text-sm font-extrabold">Whistleblowing</span><span class="block text-xs text-slate-500">Laporan anonim</span></span>
+          </a>
+          <a href="https://wa.me/6280000000000" target="_blank" rel="noopener" class="flex items-center gap-3 rounded-xl bg-white p-4 text-slate-800 hover:bg-rose-50">
+            <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-rose-100 text-rose-600"><i class="fa-brands fa-whatsapp"></i></span>
+            <span><span class="block text-sm font-extrabold">WhatsApp</span><span class="block text-xs text-slate-500">Jam kerja</span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/layout.js"></script>
+<script>
+  // ---- Slider hero ----
+  (function () {
+    const slides = [...document.querySelectorAll('#hero .slide')];
+    const dots = document.getElementById('hero-dots');
+    let i = 0, timer;
+    slides.forEach((_, n) => dots.insertAdjacentHTML('beforeend', `<button type="button" role="tab" aria-label="Slide ${n + 1}" class="h-2.5 rounded-full bg-white/50 transition-all"></button>`));
+    const dotBtns = [...dots.children];
+    const go = (n) => {
+      i = (n + slides.length) % slides.length;
+      slides.forEach((s, k) => { s.classList.toggle('is-active', k === i); s.setAttribute('aria-hidden', String(k !== i)); });
+      dotBtns.forEach((d, k) => { d.className = `h-2.5 rounded-full transition-all ${k === i ? 'w-8 bg-gold-400' : 'w-2.5 bg-white/50 hover:bg-white'}`; d.setAttribute('aria-selected', String(k === i)); });
+    };
+    const play = () => { clearInterval(timer); if (!matchMedia('(prefers-reduced-motion: reduce)').matches) timer = setInterval(() => go(i + 1), 6500); };
+    dotBtns.forEach((d, k) => d.addEventListener('click', () => { go(k); play(); }));
+    document.getElementById('hero-prev').addEventListener('click', () => { go(i - 1); play(); });
+    document.getElementById('hero-next').addEventListener('click', () => { go(i + 1); play(); });
+    const hero = document.getElementById('hero');
+    hero.addEventListener('mouseenter', () => clearInterval(timer));
+    hero.addEventListener('mouseleave', play);
+    // geser di layar sentuh
+    let x0 = null;
+    hero.addEventListener('touchstart', (e) => (x0 = e.touches[0].clientX), { passive: true });
+    hero.addEventListener('touchend', (e) => { if (x0 === null) return; const dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 50) { go(i + (dx < 0 ? 1 : -1)); play(); } x0 = null; });
+    go(0); play();
+  })();
+
+  // ---- Ticker ----
+  const tickerItems = PENGUMUMAN.map((p) => `<a href="berita.html#pengumuman" class="hover:text-brand-700"><span class="mr-2 text-brand-600">●</span>${p.judul}</a>`).join('');
+  document.getElementById('ticker').innerHTML = tickerItems + tickerItems;
+
+  // ---- Berita, pengumuman, agenda ----
+  document.getElementById('home-berita').innerHTML = BERITA.slice(0, 4).map(beritaCard).join('');
+  document.getElementById('home-pengumuman').innerHTML = PENGUMUMAN.slice(0, 4).map((p) => `
+    <li><a href="berita.html#pengumuman" class="block px-5 py-3.5 hover:bg-slate-50">
+      <p class="flex items-center gap-2 text-[11px] font-bold text-slate-500">${fmtTanggal(p.tanggal)}${p.penting ? '<span class="rounded bg-rose-100 px-1.5 py-0.5 text-rose-700">Penting</span>' : ''}</p>
+      <p class="mt-1 text-sm font-semibold leading-snug text-slate-800">${p.judul}</p>
+    </a></li>`).join('');
+  document.getElementById('home-agenda').innerHTML = AGENDA.slice(0, 3).map((a) => {
+    const d = new Date(a.tanggal + 'T00:00:00');
+    return `<li class="flex gap-3">
+      <span class="flex h-12 w-12 shrink-0 flex-col items-center justify-center rounded-lg bg-brand-600 leading-none text-white"><span class="text-lg font-extrabold">${d.getDate()}</span><span class="text-[10px] font-bold uppercase">${d.toLocaleDateString('id-ID', { month: 'short' })}</span></span>
+      <span class="min-w-0"><span class="block text-sm font-bold leading-snug text-slate-800">${a.judul}</span><span class="block text-xs text-slate-500"><i class="fa-solid fa-location-dot mr-1"></i>${a.lokasi}</span></span>
+    </li>`;
+  }).join('');
+
+  // ---- Kabupaten & sosmed ----
+  document.getElementById('kabupaten').innerHTML = SITE.kabupaten.map((k, n) => `
+    <div class="rounded-xl border ${k === 'Jayawijaya' ? 'border-brand-300 bg-brand-50' : 'border-slate-200 bg-white'} p-4 shadow-card">
+      <span class="text-xs font-bold text-slate-400">0${n + 1}</span>
+      <p class="mt-1 text-sm font-extrabold text-slate-800">${k}</p>
+      ${k === 'Jayawijaya' ? '<p class="mt-1 text-[11px] font-bold text-brand-600"><i class="fa-solid fa-star mr-1"></i>Kedudukan dinas</p>' : ''}
+    </div>`).join('');
+  document.getElementById('sosmed').innerHTML = SITE.sosmed.map((s) => `
+    <a href="${s.url}" class="flex items-center gap-3 rounded-xl border border-slate-200 p-3 hover:border-brand-300 hover:bg-slate-50">
+      <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl ${s.warna} text-lg text-white"><i class="fa-brands ${s.icon}"></i></span>
+      <span class="min-w-0"><span class="block text-sm font-extrabold text-slate-800">${s.nama}</span><span class="block truncate text-xs text-slate-500">${s.akun}</span></span>
+    </a>`).join('');
+  observeReveal();
+</script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layanan Publik - Dinas Pendidikan dan Kebudayaan Provinsi Papua Pegunungan</title>
+  <meta name="description" content="Daftar layanan publik, maklumat pelayanan, unduhan formulir, dan layanan online Dinas Pendidikan dan Kebudayaan Provinsi Papua Pegunungan.">
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tw-config.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="layanan" class="min-h-screen bg-slate-50 text-slate-800">
+<div id="site-header"></div>
+
+<main>
+  <section class="relative isolate overflow-hidden bg-brand-800 text-white">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-br from-brand-900 via-brand-800 to-edu-800"></div>
+    <div class="pattern-noken absolute inset-0 -z-10"></div>
+    <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+      <nav class="text-xs font-semibold text-white/70" aria-label="Breadcrumb"><a href="index.html" class="hover:text-white">Beranda</a> <i class="fa-solid fa-chevron-right mx-1.5 text-[9px]"></i> <span class="text-white">Layanan Publik</span></nav>
+      <h1 class="mt-3 text-3xl font-extrabold sm:text-4xl">Layanan Publik</h1>
+      <p class="mt-2 max-w-2xl text-sm text-white/80 sm:text-base">Persyaratan, alur, biaya, dan waktu penyelesaian setiap layanan — agar urusan Anda jelas sejak awal.</p>
+      <div class="mt-6 flex max-w-xl items-center gap-2 rounded-xl bg-white p-1.5 shadow-float">
+        <i class="fa-solid fa-magnifying-glass ml-3 text-slate-400"></i>
+        <input id="cari-layanan" type="search" placeholder="Cari layanan, misal: legalisir, mutasi…" class="min-w-0 flex-1 border-0 bg-transparent px-2 py-2 text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none" aria-label="Cari layanan">
+      </div>
+      <div class="mt-5 flex flex-wrap gap-2 text-xs font-bold">
+        <a href="#daftar-layanan" class="rounded-full bg-white/15 px-3 py-1.5 hover:bg-white/25">Daftar Layanan</a>
+        <a href="#maklumat" class="rounded-full bg-white/15 px-3 py-1.5 hover:bg-white/25">Maklumat Pelayanan</a>
+        <a href="#unduhan" class="rounded-full bg-white/15 px-3 py-1.5 hover:bg-white/25">Unduhan Formulir</a>
+        <a href="#online" class="rounded-full bg-white/15 px-3 py-1.5 hover:bg-white/25">Layanan Online</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DAFTAR LAYANAN -->
+  <section id="daftar-layanan" class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+    <div class="flex flex-wrap items-end justify-between gap-3">
+      <div>
+        <p class="text-xs font-bold uppercase tracking-wider text-brand-600">Daftar Layanan</p>
+        <h2 class="mt-1 text-2xl font-extrabold text-slate-900">Jenis Layanan yang Tersedia</h2>
+      </div>
+      <div id="filter-kat" class="flex flex-wrap gap-2 text-xs font-bold"></div>
+    </div>
+    <div id="list-layanan" class="mt-6 grid gap-4 lg:grid-cols-2 lg:items-start"></div>
+    <p id="kosong-layanan" hidden class="mt-6 rounded-2xl border border-dashed border-slate-300 bg-white p-8 text-center text-sm text-slate-500"><i class="fa-solid fa-magnifying-glass mb-2 block text-2xl text-slate-300"></i>Layanan tidak ditemukan. Coba kata kunci lain.</p>
+
+    <!-- Alur umum -->
+    <div class="reveal mt-10 rounded-3xl border border-slate-200 bg-white p-6 shadow-card sm:p-8">
+      <h3 class="text-lg font-extrabold text-slate-900">Alur Umum Pelayanan</h3>
+      <ol class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+        <li class="relative rounded-2xl bg-slate-50 p-4"><span class="flex h-10 w-10 items-center justify-center rounded-full bg-brand-600 font-extrabold text-white">1</span><p class="mt-3 text-sm font-extrabold text-slate-800">Datang / Daftar Online</p><p class="mt-1 text-xs text-slate-500">Ambil nomor antrean atau ajukan secara daring.</p></li>
+        <li class="relative rounded-2xl bg-slate-50 p-4"><span class="flex h-10 w-10 items-center justify-center rounded-full bg-brand-600 font-extrabold text-white">2</span><p class="mt-3 text-sm font-extrabold text-slate-800">Serahkan Berkas</p><p class="mt-1 text-xs text-slate-500">Petugas loket memeriksa kelengkapan persyaratan.</p></li>
+        <li class="relative rounded-2xl bg-slate-50 p-4"><span class="flex h-10 w-10 items-center justify-center rounded-full bg-brand-600 font-extrabold text-white">3</span><p class="mt-3 text-sm font-extrabold text-slate-800">Verifikasi</p><p class="mt-1 text-xs text-slate-500">Bidang teknis memverifikasi dan memproses.</p></li>
+        <li class="relative rounded-2xl bg-slate-50 p-4"><span class="flex h-10 w-10 items-center justify-center rounded-full bg-brand-600 font-extrabold text-white">4</span><p class="mt-3 text-sm font-extrabold text-slate-800">Penandatanganan</p><p class="mt-1 text-xs text-slate-500">Dokumen disahkan oleh pejabat berwenang.</p></li>
+        <li class="relative rounded-2xl bg-gold-50 p-4"><span class="flex h-10 w-10 items-center justify-center rounded-full bg-gold-400 font-extrabold text-slate-900"><i class="fa-solid fa-check"></i></span><p class="mt-3 text-sm font-extrabold text-slate-800">Selesai</p><p class="mt-1 text-xs text-slate-500">Dokumen diserahkan kepada pemohon.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- MAKLUMAT -->
+  <section id="maklumat" class="bg-white py-14">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-8 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)]">
+        <div class="reveal relative overflow-hidden rounded-3xl border-4 border-double border-brand-300 bg-gradient-to-b from-brand-50 to-white p-6 text-center sm:p-10">
+          <img src="assets/img/logo.png" alt="" class="mx-auto h-20 w-20 object-contain">
+          <p class="mt-4 text-xs font-bold uppercase tracking-[0.25em] text-brand-600">Maklumat Pelayanan</p>
+          <p class="mt-4 text-lg font-extrabold leading-relaxed text-slate-800 sm:text-xl">“Dengan ini, kami menyatakan sanggup menyelenggarakan pelayanan sesuai standar pelayanan yang telah ditetapkan, dan apabila tidak menepati janji ini, kami siap menerima sanksi sesuai peraturan perundang-undangan yang berlaku.”</p>
+          <div class="mx-auto mt-6 h-px w-24 bg-brand-300"></div>
+          <p class="mt-4 text-sm font-bold text-slate-700">Plt. Kepala Dinas Pendidikan dan Kebudayaan<br>Provinsi Papua Pegunungan</p>
+          <p class="mt-10 font-extrabold text-slate-900 underline decoration-brand-300 underline-offset-4">Simon Sembor</p>
+        </div>
+        <div class="reveal">
+          <p class="text-xs font-bold uppercase tracking-wider text-brand-600">Standar Pelayanan</p>
+          <h2 class="mt-1 text-2xl font-extrabold text-slate-900">Komitmen Mutu Kami</h2>
+          <ul class="mt-6 space-y-3">
+            <li class="flex gap-4 rounded-2xl border border-slate-200 p-4"><span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-600"><i class="fa-solid fa-stopwatch"></i></span><div><p class="text-sm font-extrabold text-slate-800">Tepat Waktu</p><p class="text-sm text-slate-500">Setiap layanan memiliki batas waktu penyelesaian yang jelas.</p></div></li>
+            <li class="flex gap-4 rounded-2xl border border-slate-200 p-4"><span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-600"><i class="fa-solid fa-hand-holding-dollar"></i></span><div><p class="text-sm font-extrabold text-slate-800">Tanpa Pungutan Liar</p><p class="text-sm text-slate-500">Seluruh layanan administrasi tidak dipungut biaya (gratis).</p></div></li>
+            <li class="flex gap-4 rounded-2xl border border-slate-200 p-4"><span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-600"><i class="fa-solid fa-eye"></i></span><div><p class="text-sm font-extrabold text-slate-800">Transparan</p><p class="text-sm text-slate-500">Persyaratan dan alur diumumkan terbuka di loket dan situs ini.</p></div></li>
+            <li class="flex gap-4 rounded-2xl border border-slate-200 p-4"><span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-600"><i class="fa-solid fa-wheelchair"></i></span><div><p class="text-sm font-extrabold text-slate-800">Ramah &amp; Inklusif</p><p class="text-sm text-slate-500">Prioritas bagi penyandang disabilitas, lansia, dan ibu hamil.</p></div></li>
+            <li class="flex gap-4 rounded-2xl border border-slate-200 p-4"><span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-600"><i class="fa-solid fa-comments"></i></span><div><p class="text-sm font-extrabold text-slate-800">Terbuka atas Pengaduan</p><p class="text-sm text-slate-500">Keluhan ditanggapi paling lambat 5 hari kerja. <a href="kontak.html#pengaduan" class="font-bold text-edu-600 hover:underline">Ajukan pengaduan</a></p></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UNDUHAN -->
+  <section id="unduhan" class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+    <p class="text-xs font-bold uppercase tracking-wider text-brand-600">Unduhan</p>
+    <h2 class="mt-1 text-2xl font-extrabold text-slate-900">Formulir Permohonan Layanan</h2>
+    <div class="reveal mt-6 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-card">
+      <div class="overflow-x-auto scroll-slim">
+        <table class="w-full min-w-[620px] text-left text-sm">
+          <thead class="bg-slate-50 text-xs font-bold uppercase tracking-wider text-slate-500">
+            <tr><th class="px-5 py-3">No</th><th class="px-5 py-3">Nama Formulir</th><th class="px-5 py-3">Format</th><th class="px-5 py-3">Ukuran</th><th class="px-5 py-3 text-right">Aksi</th></tr>
+          </thead>
+          <tbody id="tabel-formulir" class="divide-y divide-slate-100"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ONLINE -->
+  <section id="online" class="mx-auto max-w-7xl px-4 pb-4 sm:px-6 lg:px-8">
+    <p class="text-xs font-bold uppercase tracking-wider text-brand-600">Sistem Pelayanan Online</p>
+    <h2 class="mt-1 text-2xl font-extrabold text-slate-900">Aplikasi &amp; Portal Layanan Digital</h2>
+    <!-- DB Beasiswa unggulan -->
+    <a href="https://dbbeasiswa.nokensoft.com" target="_blank" rel="noopener" class="reveal group mt-6 flex flex-col gap-5 overflow-hidden rounded-3xl bg-gradient-to-br from-brand-700 to-edu-800 p-6 text-white shadow-float sm:flex-row sm:items-center sm:p-8">
+      <span class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gold-400 text-3xl text-slate-900"><i class="fa-solid fa-graduation-cap"></i></span>
+      <span class="flex-1">
+        <span class="text-xs font-bold uppercase tracking-wider text-gold-300">Aplikasi Dinas</span>
+        <span class="block text-xl font-extrabold">Database Beasiswa Papua Pegunungan</span>
+        <span class="mt-1 block text-sm text-white/80">Pendaftaran, verifikasi, laporan studi, dan pemantauan bantuan studi Dana Otsus.</span>
+      </span>
+      <span class="inline-flex items-center gap-2 self-start rounded-lg bg-white px-4 py-2.5 text-sm font-bold text-brand-700 group-hover:bg-gold-300 group-hover:text-slate-900 sm:self-center">Masuk <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></span>
+    </a>
+    <div id="portal" class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/layout.js"></script>
+<script>
+  const LAYANAN = [
+    { id: 'legalisir', kat: 'Peserta Didik', icon: 'fa-stamp', nama: 'Legalisir Ijazah / STTB SMA, SMK, SLB',
+      syarat: ['Fotokopi ijazah/STTB yang akan dilegalisir', 'Menunjukkan ijazah/STTB asli', 'Fotokopi KTP pemohon', 'Surat kuasa bila diwakilkan'],
+      alur: ['Pemohon menyerahkan berkas di loket', 'Petugas mencocokkan dengan dokumen asli', 'Pengesahan oleh pejabat berwenang', 'Dokumen legalisir diserahkan'],
+      biaya: 'Gratis', waktu: '1 hari kerja' },
+    { id: 'skpi', kat: 'Peserta Didik', icon: 'fa-file-circle-exclamation', nama: 'Surat Keterangan Pengganti Ijazah Hilang/Rusak',
+      syarat: ['Surat keterangan kehilangan dari Kepolisian', 'Surat keterangan dari sekolah asal', 'Fotokopi ijazah (jika ada)', 'Pas foto 3x4 latar merah 2 lembar', 'Fotokopi KTP'],
+      alur: ['Pengajuan permohonan ke loket', 'Verifikasi data kelulusan ke sekolah/arsip', 'Penerbitan surat keterangan', 'Penyerahan kepada pemohon'],
+      biaya: 'Gratis', waktu: '7 hari kerja' },
+    { id: 'mutasi-siswa', kat: 'Peserta Didik', icon: 'fa-right-left', nama: 'Rekomendasi Mutasi Siswa Antarprovinsi',
+      syarat: ['Surat permohonan orang tua/wali', 'Surat keterangan pindah dari sekolah asal', 'Fotokopi rapor terakhir', 'Surat keterangan diterima dari sekolah tujuan', 'Fotokopi Kartu Keluarga'],
+      alur: ['Pengajuan berkas', 'Verifikasi data di Dapodik', 'Penerbitan surat rekomendasi', 'Penyerahan kepada pemohon'],
+      biaya: 'Gratis', waktu: '3 hari kerja' },
+    { id: 'izin-sekolah', kat: 'Satuan Pendidikan', icon: 'fa-building-circle-check', nama: 'Izin Pendirian SMA, SMK, dan SLB Swasta',
+      syarat: ['Surat permohonan dari yayasan', 'Akta pendirian dan SK Kemenkumham', 'Studi kelayakan', 'Bukti kepemilikan/penguasaan lahan', 'Rencana kurikulum, sarana, pendidik dan tenaga kependidikan'],
+      alur: ['Pengajuan permohonan', 'Verifikasi administrasi', 'Visitasi/verifikasi lapangan', 'Penerbitan izin operasional'],
+      biaya: 'Gratis', waktu: '30 hari kerja' },
+    { id: 'npsn', kat: 'Satuan Pendidikan', icon: 'fa-hashtag', nama: 'Rekomendasi Penerbitan / Pemutakhiran NPSN',
+      syarat: ['Surat permohonan kepala sekolah', 'Izin operasional sekolah', 'Data identitas sekolah'],
+      alur: ['Pengajuan', 'Verifikasi data', 'Rekomendasi ke Kementerian', 'NPSN terbit di laman referensi'],
+      biaya: 'Gratis', waktu: '5 hari kerja' },
+    { id: 'mutasi-guru', kat: 'Guru & Tendik', icon: 'fa-chalkboard-user', nama: 'Mutasi / Pindah Tugas Guru SMA, SMK, SLB',
+      syarat: ['Surat permohonan pindah', 'Persetujuan kepala sekolah asal dan tujuan', 'Fotokopi SK pangkat terakhir', 'Fotokopi SK jabatan fungsional', 'Analisis kebutuhan guru di sekolah tujuan'],
+      alur: ['Pengajuan melalui sekolah', 'Verifikasi Bidang GTK', 'Pertimbangan BKD', 'Penerbitan SK mutasi'],
+      biaya: 'Gratis', waktu: '14 hari kerja' },
+    { id: 'beasiswa', kat: 'Beasiswa', icon: 'fa-award', nama: 'Rekomendasi & Bantuan Studi (Dana Otsus)',
+      syarat: ['Terdaftar di Database Beasiswa Papua Pegunungan', 'KTP & KK (Orang Asli Papua)', 'Surat aktif kuliah', 'Transkrip nilai terakhir', 'Rekening atas nama sendiri'],
+      alur: ['Registrasi/masuk di aplikasi DB Beasiswa', 'Unggah dokumen persyaratan', 'Verifikasi oleh operator dinas', 'Penetapan dan penyaluran bantuan'],
+      biaya: 'Gratis', waktu: 'Sesuai jadwal program', online: true },
+    { id: 'izin-penelitian', kat: 'Kebudayaan', icon: 'fa-magnifying-glass-chart', nama: 'Rekomendasi Penelitian Pendidikan & Kebudayaan',
+      syarat: ['Surat pengantar dari lembaga/kampus', 'Proposal penelitian', 'Fotokopi identitas peneliti', 'Surat izin dari Kesbangpol (bila diperlukan)'],
+      alur: ['Pengajuan berkas', 'Telaah oleh bidang terkait', 'Penerbitan surat rekomendasi'],
+      biaya: 'Gratis', waktu: '5 hari kerja' },
+    { id: 'cagar-budaya', kat: 'Kebudayaan', icon: 'fa-landmark-dome', nama: 'Pendaftaran Objek Diduga Cagar Budaya',
+      syarat: ['Formulir pendaftaran', 'Foto dan deskripsi objek', 'Titik lokasi/koordinat', 'Surat keterangan kepemilikan/pengelolaan'],
+      alur: ['Pendaftaran', 'Verifikasi oleh tim', 'Kajian Tim Ahli Cagar Budaya', 'Rekomendasi penetapan'],
+      biaya: 'Gratis', waktu: '30 hari kerja' },
+  ];
+
+  const kats = ['Semua', ...new Set(LAYANAN.map((l) => l.kat))];
+  let aktif = 'Semua';
+  const listEl = document.getElementById('list-layanan');
+  const render = () => {
+    const q = document.getElementById('cari-layanan').value.trim().toLowerCase();
+    const data = LAYANAN.filter((l) => (aktif === 'Semua' || l.kat === aktif) && (!q || (l.nama + ' ' + l.kat + ' ' + l.syarat.join(' ')).toLowerCase().includes(q)));
+    listEl.innerHTML = data.map((l) => `
+      <details id="layanan-${l.id}" class="group rounded-2xl border border-slate-200 bg-white shadow-card open:border-brand-300 open:shadow-float">
+        <summary class="flex items-center gap-4 p-5">
+          <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-brand-50 text-lg text-brand-600 group-open:bg-brand-600 group-open:text-white"><i class="fa-solid ${l.icon}"></i></span>
+          <span class="min-w-0 flex-1">
+            <span class="block text-[11px] font-bold uppercase tracking-wider text-slate-400">${l.kat}</span>
+            <span class="block font-extrabold leading-snug text-slate-900">${l.nama}</span>
+            <span class="mt-1.5 flex flex-wrap gap-2 text-[11px] font-bold">
+              <span class="rounded-full bg-brand-50 px-2 py-0.5 text-brand-700"><i class="fa-solid fa-tag mr-1"></i>${l.biaya}</span>
+              <span class="rounded-full bg-edu-50 px-2 py-0.5 text-edu-700"><i class="fa-regular fa-clock mr-1"></i>${l.waktu}</span>
+              ${l.online ? '<span class="rounded-full bg-gold-100 px-2 py-0.5 text-gold-700"><i class="fa-solid fa-globe mr-1"></i>Online</span>' : ''}
+            </span>
+          </span>
+          <i class="acc-icon fa-solid fa-chevron-down text-slate-400"></i>
+        </summary>
+        <div class="grid gap-5 border-t border-slate-100 p-5 sm:grid-cols-2">
+          <div><p class="text-xs font-extrabold uppercase tracking-wider text-slate-500"><i class="fa-solid fa-list-check mr-1.5 text-brand-500"></i>Persyaratan</p>
+            <ul class="mt-2 space-y-1.5 text-sm text-slate-600">${l.syarat.map((s) => `<li class="flex gap-2"><i class="fa-solid fa-check mt-1 text-[10px] text-brand-500"></i>${s}</li>`).join('')}</ul></div>
+          <div><p class="text-xs font-extrabold uppercase tracking-wider text-slate-500"><i class="fa-solid fa-route mr-1.5 text-brand-500"></i>Prosedur</p>
+            <ol class="mt-2 space-y-1.5 text-sm text-slate-600">${l.alur.map((s, n) => `<li class="flex gap-2"><span class="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-slate-100 text-[10px] font-bold">${n + 1}</span>${s}</li>`).join('')}</ol></div>
+          <div class="flex flex-wrap gap-2 sm:col-span-2">
+            ${l.online ? `<a href="https://dbbeasiswa.nokensoft.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-lg bg-brand-600 px-4 py-2 text-xs font-bold text-white hover:bg-brand-700"><i class="fa-solid fa-graduation-cap"></i>Ajukan via DB Beasiswa</a>` : ''}
+            <a href="#unduhan" class="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-4 py-2 text-xs font-bold text-slate-700 hover:bg-slate-50"><i class="fa-solid fa-file-arrow-down"></i>Formulir</a>
+          </div>
+        </div>
+      </details>`).join('');
+    document.getElementById('kosong-layanan').hidden = data.length > 0;
+  };
+  document.getElementById('filter-kat').innerHTML = kats.map((k) => `<button type="button" data-kat="${k}" class="rounded-full border px-3 py-1.5">${k}</button>`).join('');
+  const paintFilter = () => document.querySelectorAll('[data-kat]').forEach((b) => (b.className = `rounded-full border px-3 py-1.5 ${b.dataset.kat === aktif ? 'border-brand-600 bg-brand-600 text-white' : 'border-slate-300 bg-white text-slate-600 hover:bg-slate-50'}`));
+  document.getElementById('filter-kat').addEventListener('click', (e) => { const b = e.target.closest('[data-kat]'); if (!b) return; aktif = b.dataset.kat; paintFilter(); render(); });
+  document.getElementById('cari-layanan').addEventListener('input', () => { render(); });
+  paintFilter(); render();
+
+  // Buka layanan dari tautan cepat (#layanan-xxx)
+  const openFromHash = () => { const el = document.getElementById(location.hash.slice(1)); if (el && el.tagName === 'DETAILS') { el.open = true; el.scrollIntoView({ behavior: 'smooth', block: 'start' }); } };
+  openFromHash(); window.addEventListener('hashchange', openFromHash);
+
+  // Formulir
+  const FORMULIR = [
+    ['Formulir Permohonan Legalisir Ijazah', 'PDF', '120 KB'],
+    ['Formulir Permohonan Surat Keterangan Pengganti Ijazah', 'DOCX', '45 KB'],
+    ['Formulir Permohonan Rekomendasi Mutasi Siswa', 'DOCX', '38 KB'],
+    ['Formulir Permohonan Izin Pendirian Sekolah', 'PDF', '310 KB'],
+    ['Formulir Usulan Mutasi Guru', 'XLSX', '52 KB'],
+    ['Formulir Permohonan Rekomendasi Penelitian', 'DOCX', '40 KB'],
+    ['Formulir Pendaftaran Objek Diduga Cagar Budaya', 'PDF', '210 KB'],
+    ['Surat Kuasa Pengambilan Dokumen', 'DOCX', '28 KB'],
+  ];
+  const fmtIcon = { PDF: 'fa-file-pdf text-rose-600', DOCX: 'fa-file-word text-edu-600', XLSX: 'fa-file-excel text-brand-600' };
+  document.getElementById('tabel-formulir').innerHTML = FORMULIR.map(([n, f, s], i) => `
+    <tr class="hover:bg-slate-50">
+      <td class="px-5 py-3 text-slate-400">${i + 1}</td>
+      <td class="px-5 py-3 font-semibold text-slate-800"><i class="fa-solid ${fmtIcon[f]} mr-2"></i>${n}</td>
+      <td class="px-5 py-3"><span class="rounded bg-slate-100 px-2 py-0.5 text-xs font-bold text-slate-600">${f}</span></td>
+      <td class="px-5 py-3 text-slate-500">${s}</td>
+      <td class="px-5 py-3 text-right"><a href="#" data-soon class="inline-flex items-center gap-1.5 rounded-lg bg-brand-600 px-3 py-1.5 text-xs font-bold text-white hover:bg-brand-700"><i class="fa-solid fa-download"></i>Unduh</a></td>
+    </tr>`).join('');
+
+  // Portal online
+  const PORTAL = [
+    ['Dapodik', 'Data Pokok Pendidikan untuk operator sekolah.', 'fa-database', 'https://dapo.dikdasmen.go.id'],
+    ['Info GTK', 'Informasi data guru dan tenaga kependidikan.', 'fa-id-card-clip', 'https://info.gtk.dikdasmen.go.id'],
+    ['Rapor Pendidikan', 'Hasil asesmen dan mutu satuan pendidikan.', 'fa-chart-column', 'https://raporpendidikan.dikdasmen.go.id'],
+    ['SIPLah', 'Pengadaan barang/jasa sekolah secara daring.', 'fa-cart-shopping', 'https://siplah.dikdasmen.go.id'],
+    ['PPID Online', 'Ajukan permohonan informasi publik.', 'fa-file-signature', 'ppid.html#permohonan'],
+    ['SP4N-LAPOR!', 'Kanal pengaduan pelayanan publik nasional.', 'fa-flag', 'https://www.lapor.go.id'],
+  ];
+  document.getElementById('portal').innerHTML = PORTAL.map(([n, d, i, u]) => `
+    <a href="${u}" ${u.startsWith('http') ? 'target="_blank" rel="noopener"' : ''} class="reveal group flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-card transition hover:-translate-y-0.5 hover:border-brand-300 hover:shadow-float">
+      <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-edu-50 text-lg text-edu-600 group-hover:bg-edu-600 group-hover:text-white"><i class="fa-solid ${i}"></i></span>
+      <span class="min-w-0 flex-1"><span class="block font-extrabold text-slate-900">${n} ${u.startsWith('http') ? '<i class="fa-solid fa-arrow-up-right-from-square ml-1 text-[10px] text-slate-400"></i>' : ''}</span><span class="mt-1 block text-sm text-slate-500">${d}</span></span>
+    </a>`).join('');
+  observeReveal();
+</script>
+</body>
+</html>
