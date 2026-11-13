@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Media Center - Dinas Pendidikan dan Kebudayaan Provinsi Papua Pegunungan</title>
-  <meta name="description" content="Berita kegiatan, pengumuman, pengadaan, agenda, serta galeri foto dan video Dinas Pendidikan dan Kebudayaan Provinsi Papua Pegunungan.">
+  <title>Berita - Dinas Pendidikan dan Kebudayaan Provinsi Papua Pegunungan</title>
+  <meta name="description" content="Berita dan publikasi kegiatan Dinas Pendidikan dan Kebudayaan Provinsi Papua Pegunungan.">
   <link rel="icon" type="image/png" href="assets/img/logo.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="assets/js/tw-config.js"></script>
@@ -14,99 +14,27 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body data-page="berita" class="min-h-screen bg-slate-50 text-slate-800">
+<body data-page="berita" class="min-h-screen bg-white text-hutan-800">
 <div id="site-header"></div>
 
 <main>
-  <section class="relative isolate overflow-hidden bg-brand-800 text-white">
-    <div class="absolute inset-0 -z-10 bg-gradient-to-br from-brand-900 via-brand-800 to-edu-800"></div>
-    <div class="pattern-noken absolute inset-0 -z-10"></div>
-    <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-      <nav class="text-xs font-semibold text-white/70" aria-label="Breadcrumb"><a href="index.html" class="hover:text-white">Beranda</a> <i class="fa-solid fa-chevron-right mx-1.5 text-[9px]"></i> <span class="text-white">Media Center</span></nav>
-      <h1 class="mt-3 text-3xl font-extrabold sm:text-4xl">Berita &amp; Informasi</h1>
-      <p class="mt-2 max-w-2xl text-sm text-white/80 sm:text-base">Pusat transparansi kegiatan dinas: rilis berita, pengumuman, agenda, serta dokumentasi foto dan video.</p>
+  <section class="relative isolate overflow-hidden bg-gradient-to-br from-brand-800 via-brand-700 to-edu-800 text-white">
+    <div class="bg-grid absolute inset-0 -z-10"></div>
+    <div class="mx-auto max-w-6xl px-4 pb-6 pt-16 sm:px-6">
+      <p class="eyebrow text-white">Publikasi Kegiatan</p>
+      <h1 class="mt-4 text-4xl font-extrabold tracking-tight sm:text-5xl">Berita</h1>
+      <p class="mt-4 max-w-xl text-hutan-200">Kabar terbaru kegiatan pendidikan dan kebudayaan di Papua Pegunungan.</p>
     </div>
+    <svg class="block h-16 w-full sm:h-24" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+      <path fill="#0b513b" d="M0 80 L160 30 L320 70 L480 15 L640 75 L800 35 L960 80 L1120 25 L1280 70 L1440 40 V120 H0Z"/>
+      <path fill="#ffffff" d="M0 110 L240 85 L480 105 L720 80 L960 105 L1200 85 L1440 100 V120 H0Z"/>
+    </svg>
   </section>
 
-  <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8" data-tabs>
-    <div class="flex gap-2 overflow-x-auto pb-2 scroll-slim" role="tablist" aria-label="Media center">
-      <button type="button" role="tab" data-tab="berita" class="tab-btn inline-flex shrink-0 items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-bold text-slate-600"><i class="fa-solid fa-newspaper"></i>Berita Dinas</button>
-      <button type="button" role="tab" data-tab="pengumuman" class="tab-btn inline-flex shrink-0 items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-bold text-slate-600"><i class="fa-solid fa-bullhorn"></i>Pengumuman &amp; Pengadaan</button>
-      <button type="button" role="tab" data-tab="agenda" class="tab-btn inline-flex shrink-0 items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-bold text-slate-600"><i class="fa-solid fa-calendar-days"></i>Agenda Kegiatan</button>
-      <button type="button" role="tab" data-tab="galeri" class="tab-btn inline-flex shrink-0 items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-bold text-slate-600"><i class="fa-solid fa-images"></i>Galeri Foto &amp; Video</button>
-    </div>
-
-    <!-- BERITA -->
-    <div id="panel-berita" role="tabpanel" class="mt-6">
-      <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <div id="kat-berita" class="flex flex-wrap gap-2 text-xs font-bold"></div>
-        <label class="flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-3 py-2 sm:w-72">
-          <i class="fa-solid fa-magnifying-glass text-slate-400"></i>
-          <input id="cari-berita" type="search" placeholder="Cari berita…" class="min-w-0 flex-1 border-0 bg-transparent text-sm focus:outline-none" aria-label="Cari berita">
-        </label>
-      </div>
-      <!-- Berita utama -->
-      <div id="headline" class="mt-6"></div>
-      <div id="grid-berita" class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"></div>
-      <p id="kosong-berita" hidden class="mt-6 rounded-2xl border border-dashed border-slate-300 bg-white p-8 text-center text-sm text-slate-500">Tidak ada berita yang cocok.</p>
-    </div>
-
-    <!-- PENGUMUMAN -->
-    <div id="panel-pengumuman" role="tabpanel" class="mt-6" hidden>
-      <div class="grid gap-6 lg:grid-cols-[minmax(0,1fr)_340px]">
-        <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-card">
-          <div class="flex items-center justify-between border-b border-slate-100 px-5 py-4">
-            <h2 class="font-extrabold text-slate-900">Daftar Pengumuman</h2>
-            <span id="jml-pengumuman" class="text-xs font-semibold text-slate-500"></span>
-          </div>
-          <ul id="list-pengumuman" class="divide-y divide-slate-100"></ul>
-        </div>
-        <aside class="space-y-4">
-          <div class="rounded-2xl bg-gradient-to-br from-edu-700 to-edu-900 p-6 text-white">
-            <i class="fa-solid fa-gavel text-2xl text-gold-300"></i>
-            <h3 class="mt-3 text-lg font-extrabold">Pengadaan Barang &amp; Jasa</h3>
-            <p class="mt-1 text-sm text-white/80">Informasi tender, RUP, dan pengumuman pemenang melalui sistem pengadaan elektronik pemerintah.</p>
-            <div class="mt-4 space-y-2">
-              <a href="https://inaproc.id" target="_blank" rel="noopener" class="flex items-center justify-between rounded-lg bg-white/10 px-4 py-2.5 text-sm font-bold hover:bg-white/20">INAPROC / LPSE <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
-              <a href="https://sirup.inaproc.id" target="_blank" rel="noopener" class="flex items-center justify-between rounded-lg bg-white/10 px-4 py-2.5 text-sm font-bold hover:bg-white/20">SiRUP — Rencana Umum Pengadaan <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
-            </div>
-          </div>
-          <div class="rounded-2xl border border-gold-300 bg-gold-50 p-5">
-            <p class="flex items-center gap-2 text-sm font-extrabold text-gold-700"><i class="fa-solid fa-triangle-exclamation"></i>Waspada Penipuan</p>
-            <p class="mt-1 text-sm text-slate-700">Seleksi dan rekrutmen di lingkungan dinas <strong>tidak dipungut biaya</strong>. Abaikan pihak yang menjanjikan kelulusan dengan imbalan.</p>
-          </div>
-        </aside>
-      </div>
-    </div>
-
-    <!-- AGENDA -->
-    <div id="panel-agenda" role="tabpanel" class="mt-6" hidden>
-      <div class="grid gap-6 lg:grid-cols-[340px_minmax(0,1fr)]">
-        <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-card lg:self-start">
-          <div class="flex items-center justify-between">
-            <button type="button" id="cal-prev" class="flex h-9 w-9 items-center justify-center rounded-lg hover:bg-slate-100" aria-label="Bulan sebelumnya"><i class="fa-solid fa-chevron-left"></i></button>
-            <h2 id="cal-title" class="font-extrabold text-slate-900"></h2>
-            <button type="button" id="cal-next" class="flex h-9 w-9 items-center justify-center rounded-lg hover:bg-slate-100" aria-label="Bulan berikutnya"><i class="fa-solid fa-chevron-right"></i></button>
-          </div>
-          <div class="mt-4 grid grid-cols-7 gap-1 text-center text-[11px] font-bold uppercase text-slate-400"><span>Sen</span><span>Sel</span><span>Rab</span><span>Kam</span><span>Jum</span><span>Sab</span><span>Min</span></div>
-          <div id="cal-grid" class="mt-1 grid grid-cols-7 gap-1 text-center text-sm"></div>
-          <p class="mt-4 flex items-center gap-2 text-xs text-slate-500"><span class="h-3 w-3 rounded bg-brand-100"></span>Ada kegiatan <span class="ml-3 h-3 w-3 rounded ring-2 ring-edu-600"></span>Hari ini</p>
-        </div>
-        <div>
-          <h2 class="text-lg font-extrabold text-slate-900">Kegiatan Mendatang</h2>
-          <ul id="list-agenda" class="mt-4 space-y-3"></ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- GALERI -->
-    <div id="panel-galeri" role="tabpanel" class="mt-6" hidden>
-      <h2 class="text-lg font-extrabold text-slate-900">Galeri Foto</h2>
-      <div id="galeri-foto" class="mt-4 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4"></div>
-      <h2 class="mt-10 text-lg font-extrabold text-slate-900">Galeri Video</h2>
-      <div id="galeri-video" class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
-    </div>
-  </div>
+  <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <div id="filter" class="flex flex-wrap gap-2" role="group" aria-label="Saring kategori"></div>
+    <div id="berita-list" class="mt-10 grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3"></div>
+  </section>
 </main>
 
 <div id="site-footer"></div>
@@ -114,127 +42,18 @@
 <script src="assets/js/data.js"></script>
 <script src="assets/js/layout.js"></script>
 <script>
-  // ---------- Berita ----------
-  const katB = ['Semua', ...new Set(BERITA.map((b) => b.kategori))];
-  let katAktif = 'Semua';
-  const renderBerita = () => {
-    const q = document.getElementById('cari-berita').value.trim().toLowerCase();
-    const data = BERITA.filter((b) => (katAktif === 'Semua' || b.kategori === katAktif) && (!q || (b.judul + b.ringkas).toLowerCase().includes(q)));
-    const showHead = katAktif === 'Semua' && !q && data.length;
-    const h = showHead ? data[0] : null;
-    document.getElementById('headline').innerHTML = h ? `
-      <article class="grid overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-card lg:grid-cols-2">
-        <button type="button" data-berita="${h.id}" class="relative aspect-[16/10] overflow-hidden lg:aspect-auto"><img src="${h.img}" alt="" class="h-full w-full object-cover transition duration-500 hover:scale-105"></button>
-        <div class="flex flex-col justify-center p-6 sm:p-8">
-          <span class="self-start rounded-full bg-gold-400 px-3 py-1 text-[11px] font-extrabold uppercase tracking-wider text-slate-900">Berita Utama</span>
-          <p class="mt-4 text-xs font-semibold text-slate-500">${h.kategori} · ${fmtTanggal(h.tanggal)}</p>
-          <h2 class="mt-2 text-2xl font-extrabold leading-tight text-slate-900"><button type="button" data-berita="${h.id}" class="text-left hover:text-brand-700">${h.judul}</button></h2>
-          <p class="mt-3 text-sm text-slate-600">${h.ringkas}</p>
-          <button type="button" data-berita="${h.id}" class="mt-5 inline-flex items-center gap-2 self-start rounded-lg bg-brand-600 px-4 py-2 text-sm font-bold text-white hover:bg-brand-700">Baca Berita <i class="fa-solid fa-arrow-right text-xs"></i></button>
-        </div>
-      </article>` : '';
-    const rest = showHead ? data.slice(1) : data;
-    document.getElementById('grid-berita').innerHTML = rest.map(beritaCard).join('');
-    document.getElementById('kosong-berita').hidden = data.length > 0;
-    observeReveal();
-  };
-  const katEl = document.getElementById('kat-berita');
-  katEl.innerHTML = katB.map((k) => `<button type="button" data-kb="${k}"></button>`).join('');
-  const paintKat = () => katEl.querySelectorAll('[data-kb]').forEach((b) => { b.textContent = b.dataset.kb; b.className = `rounded-full border px-3 py-1.5 ${b.dataset.kb === katAktif ? 'border-brand-600 bg-brand-600 text-white' : 'border-slate-300 bg-white text-slate-600 hover:bg-slate-50'}`; });
-  katEl.addEventListener('click', (e) => { const b = e.target.closest('[data-kb]'); if (!b) return; katAktif = b.dataset.kb; paintKat(); renderBerita(); });
-  document.getElementById('cari-berita').addEventListener('input', renderBerita);
-  paintKat(); renderBerita();
-
-  // ---------- Pengumuman ----------
-  const tagWarna = { Beasiswa: 'bg-brand-50 text-brand-700', Seleksi: 'bg-edu-50 text-edu-700', Pendataan: 'bg-slate-100 text-slate-700', Pengadaan: 'bg-gold-100 text-gold-700', Lowongan: 'bg-purple-50 text-purple-700' };
-  document.getElementById('jml-pengumuman').textContent = PENGUMUMAN.length + ' pengumuman';
-  document.getElementById('list-pengumuman').innerHTML = PENGUMUMAN.map((p) => `
-    <li class="flex flex-col gap-3 px-5 py-4 hover:bg-slate-50 sm:flex-row sm:items-center">
-      <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl ${p.penting ? 'bg-rose-50 text-rose-600' : 'bg-slate-100 text-slate-500'}"><i class="fa-solid ${p.penting ? 'fa-circle-exclamation' : 'fa-file-lines'}"></i></span>
-      <div class="min-w-0 flex-1">
-        <p class="flex flex-wrap items-center gap-2 text-[11px] font-bold">
-          <span class="rounded px-1.5 py-0.5 ${tagWarna[p.tag] || 'bg-slate-100 text-slate-600'}">${p.tag}</span>
-          <span class="text-slate-500">${fmtTanggal(p.tanggal)}</span>
-          ${p.penting ? '<span class="rounded bg-rose-100 px-1.5 py-0.5 text-rose-700">Penting</span>' : ''}
-        </p>
-        <p class="mt-1 font-bold leading-snug text-slate-800">${p.judul}</p>
-      </div>
-      <a href="#" data-soon class="inline-flex shrink-0 items-center gap-1.5 self-start rounded-lg border border-slate-300 px-3 py-1.5 text-xs font-bold text-slate-700 hover:bg-white sm:self-center"><i class="fa-solid fa-file-pdf text-rose-600"></i>Lampiran</a>
-    </li>`).join('');
-
-  // ---------- Agenda + kalender ----------
-  const today = new Date(); today.setHours(0, 0, 0, 0);
-  let calM = new Date(today.getFullYear(), today.getMonth(), 1);
-  const eventDates = new Set(AGENDA.map((a) => a.tanggal));
-  const iso = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
-  const renderCal = () => {
-    document.getElementById('cal-title').textContent = calM.toLocaleDateString('id-ID', { month: 'long', year: 'numeric' });
-    const pad = (calM.getDay() + 6) % 7;
-    const days = new Date(calM.getFullYear(), calM.getMonth() + 1, 0).getDate();
-    let html = '<span></span>'.repeat(pad);
-    for (let d = 1; d <= days; d++) {
-      const dt = new Date(calM.getFullYear(), calM.getMonth(), d);
-      const k = iso(dt);
-      const ev = eventDates.has(k);
-      html += `<button type="button" ${ev ? `data-goto="${k}"` : 'disabled'} class="cal-day aspect-square rounded-lg ${ev ? 'has-event hover:bg-brand-200' : 'text-slate-600'} ${+dt === +today ? 'is-today' : ''}">${d}</button>`;
-    }
-    document.getElementById('cal-grid').innerHTML = html;
-  };
-  document.getElementById('cal-prev').onclick = () => { calM.setMonth(calM.getMonth() - 1); renderCal(); };
-  document.getElementById('cal-next').onclick = () => { calM.setMonth(calM.getMonth() + 1); renderCal(); };
-  document.getElementById('cal-grid').addEventListener('click', (e) => {
-    const b = e.target.closest('[data-goto]'); if (!b) return;
-    const el = document.getElementById('ag-' + b.dataset.goto);
-    el?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    el?.classList.add('ring-2', 'ring-brand-400'); setTimeout(() => el?.classList.remove('ring-2', 'ring-brand-400'), 1800);
-  });
-  renderCal();
-  document.getElementById('list-agenda').innerHTML = AGENDA.map((a) => {
-    const d = new Date(a.tanggal + 'T00:00:00');
-    const lewat = d < today;
-    return `<li id="ag-${a.tanggal}" class="flex gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-card transition ${lewat ? 'opacity-60' : ''}">
-      <span class="flex h-16 w-16 shrink-0 flex-col items-center justify-center rounded-xl ${lewat ? 'bg-slate-200 text-slate-600' : 'bg-gradient-to-br from-brand-600 to-brand-700 text-white'} leading-none">
-        <span class="text-2xl font-extrabold">${d.getDate()}</span><span class="mt-1 text-[10px] font-bold uppercase">${d.toLocaleDateString('id-ID', { month: 'short', year: '2-digit' })}</span>
-      </span>
-      <div class="min-w-0">
-        <p class="font-extrabold leading-snug text-slate-900">${a.judul}</p>
-        <p class="mt-1 flex flex-wrap gap-x-4 gap-y-1 text-xs font-semibold text-slate-500">
-          <span><i class="fa-regular fa-calendar mr-1"></i>${d.toLocaleDateString('id-ID', { weekday: 'long' })}</span>
-          <span><i class="fa-regular fa-clock mr-1"></i>${a.jam}</span>
-          <span><i class="fa-solid fa-location-dot mr-1"></i>${a.lokasi}</span>
-        </p>
-        ${lewat ? '<span class="mt-2 inline-block rounded bg-slate-100 px-1.5 py-0.5 text-[11px] font-bold text-slate-500">Selesai</span>' : ''}
-      </div>
-    </li>`;
-  }).join('');
-
-  // ---------- Galeri ----------
-  const FOTO = ['Rakor Kepala Sekolah', 'Bimtek Dapodik', 'Kunjungan BGTC', 'Hari Guru Nasional', 'Penyerahan Beasiswa', 'Festival Budaya Pelajar', 'Lokakarya Digital', 'Pentas Seni Tradisi'];
-  document.getElementById('galeri-foto').innerHTML = FOTO.map((t, i) => `
-    <button type="button" data-foto="${i}" class="reveal group relative overflow-hidden rounded-2xl bg-slate-200 ${i === 0 ? 'col-span-2 row-span-2' : ''}">
-      <img src="https://picsum.photos/seed/pp-galeri-${i}/${i === 0 ? '900/900' : '500/500'}" alt="${t}" loading="lazy" class="aspect-square h-full w-full object-cover transition duration-500 group-hover:scale-105">
-      <span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/80 to-transparent p-3 pt-10 text-left text-xs font-bold text-white sm:text-sm">${t}</span>
-      <span class="absolute right-2 top-2 flex h-8 w-8 items-center justify-center rounded-full bg-white/90 text-slate-700 opacity-0 transition group-hover:opacity-100"><i class="fa-solid fa-expand text-xs"></i></span>
-    </button>`).join('');
-  document.getElementById('galeri-foto').addEventListener('click', (e) => {
-    const b = e.target.closest('[data-foto]'); if (!b) return;
-    const i = +b.dataset.foto;
-    openModal(`<img src="https://picsum.photos/seed/pp-galeri-${i}/1200/800" alt="${FOTO[i]}" class="w-full"><div class="p-5"><p class="font-extrabold text-slate-900">${FOTO[i]}</p><p class="text-sm text-slate-500">Dokumentasi kegiatan Disdikbud Papua Pegunungan</p></div>`);
-  });
-  const VIDEO = ['Profil Dinas Pendidikan dan Kebudayaan', 'Liputan Baliem Global Training Center', 'Testimoni Penerima Beasiswa Otsus'];
-  document.getElementById('galeri-video').innerHTML = VIDEO.map((t, i) => `
-    <button type="button" data-video="${i}" class="reveal group overflow-hidden rounded-2xl border border-slate-200 bg-white text-left shadow-card">
-      <span class="relative block aspect-video overflow-hidden bg-slate-900">
-        <img src="https://picsum.photos/seed/pp-video-${i}/640/360" alt="" loading="lazy" class="h-full w-full object-cover opacity-75 transition group-hover:scale-105 group-hover:opacity-90">
-        <span class="absolute inset-0 flex items-center justify-center"><span class="flex h-14 w-14 items-center justify-center rounded-full bg-white/95 text-xl text-rose-600 shadow-lg transition group-hover:scale-110"><i class="fa-solid fa-play ml-1"></i></span></span>
-      </span>
-      <span class="block p-4 text-sm font-extrabold text-slate-900">${t}</span>
-    </button>`).join('');
-  document.getElementById('galeri-video').addEventListener('click', (e) => {
-    const b = e.target.closest('[data-video]'); if (!b) return;
-    openModal(`<div class="flex aspect-video flex-col items-center justify-center gap-3 bg-slate-900 p-6 text-center text-white"><i class="fa-brands fa-youtube text-5xl text-rose-500"></i><p class="font-extrabold">${VIDEO[+b.dataset.video]}</p><p class="max-w-sm text-sm text-white/70">Video akan disematkan dari kanal YouTube resmi dinas setelah tersedia.</p></div>`);
-  });
-  observeReveal();
+  (function () {
+    const kategori = ['Semua', ...new Set(BERITA.map((b) => b.kategori))];
+    const filter = document.getElementById('filter');
+    const list = document.getElementById('berita-list');
+    const render = (k) => {
+      filter.innerHTML = kategori.map((x) => `<button type="button" data-k="${x}" aria-pressed="${x === k}" class="rounded-full border px-4 py-1.5 text-sm font-semibold transition ${x === k ? 'border-hutan-950 bg-hutan-950 text-white' : 'border-hutan-200 text-hutan-600 hover:border-brand-400'}">${x}</button>`).join('');
+      list.innerHTML = BERITA.filter((b) => k === 'Semua' || b.kategori === k).map(beritaCard).join('');
+      observeReveal();
+    };
+    filter.addEventListener('click', (e) => { const b = e.target.closest('[data-k]'); if (b) render(b.dataset.k); });
+    render('Semua');
+  })();
 </script>
 </body>
 </html>

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profil Instansi - Dinas Pendidikan dan Kebudayaan Provinsi Papua Pegunungan</title>
-  <meta name="description" content="Sejarah, visi misi, tugas pokok dan fungsi, struktur organisasi, serta profil pimpinan Dinas Pendidikan dan Kebudayaan Provinsi Papua Pegunungan.">
+  <title>Tentang Kami - Dinas Pendidikan dan Kebudayaan Provinsi Papua Pegunungan</title>
+  <meta name="description" content="Tentang Dinas Pendidikan dan Kebudayaan Provinsi Papua Pegunungan: sejarah, visi misi, dan program kerja.">
   <link rel="icon" type="image/png" href="assets/img/logo.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="assets/js/tw-config.js"></script>
@@ -14,211 +14,92 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body data-page="profil" class="min-h-screen bg-slate-50 text-slate-800">
+<body data-page="profil" class="min-h-screen bg-white text-hutan-800">
 <div id="site-header"></div>
 
 <main>
   <!-- Header halaman -->
-  <section class="relative isolate overflow-hidden bg-brand-800 text-white">
-    <div class="absolute inset-0 -z-10 bg-gradient-to-br from-brand-900 via-brand-800 to-edu-800"></div>
-    <div class="pattern-noken absolute inset-0 -z-10"></div>
-    <img src="assets/img/logo.png" alt="" class="absolute -right-10 top-1/2 -z-10 hidden h-80 -translate-y-1/2 opacity-10 md:block">
-    <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
-      <nav class="text-xs font-semibold text-white/70" aria-label="Breadcrumb"><a href="index.html" class="hover:text-white">Beranda</a> <i class="fa-solid fa-chevron-right mx-1.5 text-[9px]"></i> <span class="text-white">Profil Instansi</span></nav>
-      <h1 class="mt-3 text-3xl font-extrabold sm:text-4xl">Profil Instansi</h1>
-      <p class="mt-2 max-w-2xl text-sm text-white/80 sm:text-base">Identitas, landasan hukum, dan susunan organisasi Dinas Pendidikan dan Kebudayaan Provinsi Papua Pegunungan.</p>
+  <section class="relative isolate overflow-hidden bg-gradient-to-br from-brand-800 via-brand-700 to-edu-800 text-white">
+    <div class="bg-grid absolute inset-0 -z-10"></div>
+    <div class="mx-auto max-w-6xl px-4 pb-6 pt-16 sm:px-6">
+      <p class="eyebrow text-white">Tentang</p>
+      <h1 class="mt-4 text-4xl font-extrabold tracking-tight sm:text-5xl">Tentang Kami</h1>
+      <p class="mt-4 max-w-xl text-hutan-200">Mengenal Dinas Pendidikan dan Kebudayaan Provinsi Papua Pegunungan.</p>
+    </div>
+    <svg class="block h-16 w-full sm:h-24" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+      <path fill="#0b513b" d="M0 80 L160 30 L320 70 L480 15 L640 75 L800 35 L960 80 L1120 25 L1280 70 L1440 40 V120 H0Z"/>
+      <path fill="#ffffff" d="M0 110 L240 85 L480 105 L720 80 L960 105 L1200 85 L1440 100 V120 H0Z"/>
+    </svg>
+  </section>
+
+  <!-- TENTANG -->
+  <section id="tentang" class="mx-auto grid max-w-6xl gap-12 px-4 py-16 sm:px-6 lg:grid-cols-[1.4fr_1fr]">
+    <div class="reveal">
+      <p class="eyebrow text-brand-700">Sejarah Singkat</p>
+      <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-hutan-950">Lahir bersama provinsi termuda di Tanah Papua</h2>
+      <div class="mt-6 space-y-4 leading-relaxed text-hutan-600">
+        <p>Provinsi Papua Pegunungan dibentuk melalui <strong class="text-hutan-900">Undang-Undang Nomor 16 Tahun 2022</strong> sebagai hasil pemekaran Provinsi Papua, dengan ibu kota di Wamena, Kabupaten Jayawijaya.</p>
+        <p>Seiring terbentuknya perangkat daerah, <strong class="text-hutan-900">Dinas Pendidikan dan Kebudayaan</strong> dibentuk untuk membantu Gubernur menyelenggarakan urusan pendidikan menengah, pendidikan khusus, dan kebudayaan yang menjadi kewenangan provinsi.</p>
+        <p>Di tengah tantangan geografis, dinas memprioritaskan pemerataan akses sekolah, peningkatan mutu guru, pembangunan sarana pendidikan, dan pelestarian budaya masyarakat pegunungan.</p>
+      </div>
+    </div>
+    <dl class="reveal divide-y divide-hutan-100 self-start rounded-lg border border-hutan-100 text-sm">
+      <div class="p-5"><dt class="text-xs font-bold uppercase tracking-wider text-hutan-400">Kepala Dinas (Plt.)</dt><dd class="mt-1 font-bold text-hutan-950">Simon Sembor</dd></div>
+      <div class="p-5"><dt class="text-xs font-bold uppercase tracking-wider text-hutan-400">Kedudukan</dt><dd class="mt-1 font-bold text-hutan-950">Wamena, Kabupaten Jayawijaya</dd></div>
+      <div class="p-5"><dt class="text-xs font-bold uppercase tracking-wider text-hutan-400">Wilayah Kerja</dt><dd class="mt-1 font-bold text-hutan-950" id="kab"></dd></div>
+    </dl>
+  </section>
+
+  <!-- VISI MISI -->
+  <section id="visi-misi" class="border-y border-hutan-100 bg-hutan-50">
+    <div class="mx-auto grid max-w-6xl gap-12 px-4 py-16 sm:px-6 lg:grid-cols-2">
+      <div class="reveal">
+        <p class="eyebrow text-brand-700">Visi</p>
+        <p class="mt-5 text-2xl font-bold leading-snug text-hutan-950">“Terwujudnya Pendidikan dan Kebudayaan Papua Pegunungan yang Bermutu, Merata, Berkarakter, dan Berdaya Saing, Berlandaskan Kearifan Lokal.”</p>
+      </div>
+      <div class="reveal">
+        <p class="eyebrow text-brand-700">Misi</p>
+        <ol class="mt-5 space-y-4 text-hutan-600">
+          <li class="flex gap-4"><span class="font-extrabold text-brand-700">01</span>Memperluas akses dan pemerataan pendidikan menengah dan khusus hingga ke wilayah terpencil.</li>
+          <li class="flex gap-4"><span class="font-extrabold text-brand-700">02</span>Meningkatkan mutu pembelajaran serta kompetensi guru yang humanis dan berkarakter.</li>
+          <li class="flex gap-4"><span class="font-extrabold text-brand-700">03</span>Membangun sarana dan prasarana pendidikan yang layak.</li>
+          <li class="flex gap-4"><span class="font-extrabold text-brand-700">04</span>Melestarikan dan memajukan kebudayaan masyarakat pegunungan.</li>
+        </ol>
+      </div>
     </div>
   </section>
 
-  <div class="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 lg:grid-cols-[240px_minmax(0,1fr)] lg:px-8">
-    <!-- Navigasi samping -->
-    <aside class="lg:sticky lg:top-28 lg:self-start">
-      <nav class="flex gap-2 overflow-x-auto rounded-2xl border border-slate-200 bg-white p-2 text-sm font-semibold shadow-card scroll-slim lg:flex-col" aria-label="Bagian profil">
-        <a href="#sejarah" class="flex shrink-0 items-center gap-3 rounded-lg px-3 py-2 text-slate-600 hover:bg-brand-50 hover:text-brand-700"><i class="fa-solid fa-clock-rotate-left w-4 text-brand-500"></i>Sejarah Singkat</a>
-        <a href="#identitas" class="flex shrink-0 items-center gap-3 rounded-lg px-3 py-2 text-slate-600 hover:bg-brand-50 hover:text-brand-700"><i class="fa-solid fa-id-card w-4 text-brand-500"></i>Identitas</a>
-        <a href="#visi-misi" class="flex shrink-0 items-center gap-3 rounded-lg px-3 py-2 text-slate-600 hover:bg-brand-50 hover:text-brand-700"><i class="fa-solid fa-bullseye w-4 text-brand-500"></i>Visi &amp; Misi</a>
-        <a href="#tupoksi" class="flex shrink-0 items-center gap-3 rounded-lg px-3 py-2 text-slate-600 hover:bg-brand-50 hover:text-brand-700"><i class="fa-solid fa-list-check w-4 text-brand-500"></i>Tupoksi</a>
-        <a href="#struktur" class="flex shrink-0 items-center gap-3 rounded-lg px-3 py-2 text-slate-600 hover:bg-brand-50 hover:text-brand-700"><i class="fa-solid fa-sitemap w-4 text-brand-500"></i>Struktur Organisasi</a>
-        <a href="#pimpinan" class="flex shrink-0 items-center gap-3 rounded-lg px-3 py-2 text-slate-600 hover:bg-brand-50 hover:text-brand-700"><i class="fa-solid fa-user-tie w-4 text-brand-500"></i>Profil Pimpinan</a>
-      </nav>
-    </aside>
-
-    <div class="min-w-0 space-y-10">
-      <!-- SEJARAH -->
-      <section id="sejarah" class="reveal rounded-3xl border border-slate-200 bg-white p-6 shadow-card sm:p-8">
-        <p class="text-xs font-bold uppercase tracking-wider text-brand-600">Sejarah Singkat</p>
-        <h2 class="mt-1 text-2xl font-extrabold text-slate-900">Lahir Bersama Provinsi Termuda di Tanah Papua</h2>
-        <div class="mt-4 space-y-3 text-[15px] leading-relaxed text-slate-600">
-          <p>Provinsi Papua Pegunungan dibentuk melalui <strong>Undang-Undang Nomor 16 Tahun 2022</strong> sebagai hasil pemekaran Provinsi Papua, dengan ibu kota di Wamena, Kabupaten Jayawijaya. Pemekaran ini bertujuan mendekatkan pelayanan pemerintahan dan mempercepat pembangunan di wilayah pegunungan tengah Papua.</p>
-          <p>Seiring terbentuknya perangkat daerah provinsi, <strong>Dinas Pendidikan dan Kebudayaan</strong> dibentuk untuk menyelenggarakan urusan pemerintahan bidang pendidikan dan kebudayaan yang menjadi kewenangan provinsi — terutama pendidikan menengah (SMA/SMK), pendidikan khusus (SLB), serta pelestarian dan pemajuan kebudayaan.</p>
-          <p>Di tengah tantangan geografis dan keterbatasan infrastruktur, dinas memprioritaskan pembenahan data pokok pendidikan, pengelolaan beasiswa yang bersumber dari Dana Otonomi Khusus, pembangunan sarana pendidikan, serta penguatan pendidikan digital yang berkarakter.</p>
-        </div>
-        <!-- Linimasa -->
-        <ol class="relative mt-8 space-y-6 border-l-2 border-brand-100 pl-6">
-          <li class="relative"><span class="absolute -left-[33px] flex h-4 w-4 items-center justify-center rounded-full bg-brand-600 ring-4 ring-brand-100"></span>
-            <p class="text-xs font-extrabold text-brand-600">2022</p><p class="font-bold text-slate-800">Pembentukan Provinsi Papua Pegunungan</p><p class="text-sm text-slate-500">UU No. 16 Tahun 2022 menetapkan Papua Pegunungan sebagai daerah otonom baru dengan 8 kabupaten.</p></li>
-          <li class="relative"><span class="absolute -left-[33px] flex h-4 w-4 items-center justify-center rounded-full bg-brand-600 ring-4 ring-brand-100"></span>
-            <p class="text-xs font-extrabold text-brand-600">2023</p><p class="font-bold text-slate-800">Pembentukan Perangkat Daerah</p><p class="text-sm text-slate-500">Dinas Pendidikan dan Kebudayaan mulai menjalankan urusan pendidikan menengah, khusus, dan kebudayaan.</p></li>
-          <li class="relative"><span class="absolute -left-[33px] flex h-4 w-4 items-center justify-center rounded-full bg-brand-600 ring-4 ring-brand-100"></span>
-            <p class="text-xs font-extrabold text-brand-600">2024–2025</p><p class="font-bold text-slate-800">Penguatan Data &amp; Beasiswa Otsus</p><p class="text-sm text-slate-500">Pendataan guru dan murid di seluruh kabupaten serta penataan program beasiswa dan bantuan studi.</p></li>
-          <li class="relative"><span class="absolute -left-[33px] flex h-4 w-4 items-center justify-center rounded-full bg-gold-400 ring-4 ring-gold-100"></span>
-            <p class="text-xs font-extrabold text-gold-700">2026</p><p class="font-bold text-slate-800">Transformasi Digital Layanan</p><p class="text-sm text-slate-500">Peluncuran Database Beasiswa, situs resmi, serta pembangunan Baliem Global Training Center.</p></li>
-        </ol>
-      </section>
-
-      <!-- IDENTITAS -->
-      <section id="identitas" class="reveal grid gap-4 sm:grid-cols-2">
-        <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-card"><p class="text-xs font-bold uppercase tracking-wider text-slate-400">Nama Instansi</p><p class="mt-1 font-extrabold text-slate-900">Dinas Pendidikan dan Kebudayaan Provinsi Papua Pegunungan</p></div>
-        <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-card"><p class="text-xs font-bold uppercase tracking-wider text-slate-400">Kepala Dinas (Plt.)</p><p class="mt-1 font-extrabold text-slate-900">Simon Sembor</p></div>
-        <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-card"><p class="text-xs font-bold uppercase tracking-wider text-slate-400">Kedudukan</p><p class="mt-1 font-extrabold text-slate-900">Wamena, Kabupaten Jayawijaya</p></div>
-        <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-card"><p class="text-xs font-bold uppercase tracking-wider text-slate-400">Wilayah Kerja</p><p class="mt-1 font-extrabold text-slate-900">8 Kabupaten di Provinsi Papua Pegunungan</p></div>
-      </section>
-
-      <!-- VISI MISI -->
-      <section id="visi-misi" class="reveal overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-card">
-        <div class="relative bg-gradient-to-br from-brand-700 to-edu-800 p-6 text-white sm:p-10">
-          <div class="pattern-noken absolute inset-0"></div>
-          <p class="relative text-xs font-bold uppercase tracking-wider text-gold-300">Visi</p>
-          <p class="relative mt-3 text-xl font-extrabold leading-snug sm:text-2xl">“Terwujudnya Pendidikan dan Kebudayaan Papua Pegunungan yang Bermutu, Merata, Berkarakter, dan Berdaya Saing, Berlandaskan Kearifan Lokal.”</p>
-          <p class="relative mt-4 text-sm text-white/80">Selaras dengan semangat Pemerintah Provinsi Papua Pegunungan: <strong class="text-gold-300">Bangkit Bersama Membangun</strong>.</p>
-        </div>
-        <div class="p-6 sm:p-10">
-          <p class="text-xs font-bold uppercase tracking-wider text-brand-600">Misi</p>
-          <ol class="mt-4 grid gap-4 md:grid-cols-2">
-            <li class="flex gap-4 rounded-2xl bg-slate-50 p-4"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-600 font-extrabold text-white">1</span><p class="text-sm text-slate-700">Memperluas akses dan pemerataan layanan pendidikan menengah dan khusus hingga ke wilayah terpencil.</p></li>
-            <li class="flex gap-4 rounded-2xl bg-slate-50 p-4"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-600 font-extrabold text-white">2</span><p class="text-sm text-slate-700">Meningkatkan mutu pembelajaran, kompetensi guru, dan tenaga kependidikan yang humanis dan berkarakter.</p></li>
-            <li class="flex gap-4 rounded-2xl bg-slate-50 p-4"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-600 font-extrabold text-white">3</span><p class="text-sm text-slate-700">Memperkuat data pokok pendidikan yang akurat dan terintegrasi sebagai dasar perencanaan kebijakan.</p></li>
-            <li class="flex gap-4 rounded-2xl bg-slate-50 p-4"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-600 font-extrabold text-white">4</span><p class="text-sm text-slate-700">Mengelola beasiswa dan bantuan studi Dana Otsus secara tepat sasaran, transparan, dan akuntabel.</p></li>
-            <li class="flex gap-4 rounded-2xl bg-slate-50 p-4"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-600 font-extrabold text-white">5</span><p class="text-sm text-slate-700">Membangun sarana dan prasarana pendidikan yang layak, termasuk sekolah berasrama unggulan.</p></li>
-            <li class="flex gap-4 rounded-2xl bg-slate-50 p-4"><span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-600 font-extrabold text-white">6</span><p class="text-sm text-slate-700">Melestarikan dan memajukan kebudayaan masyarakat pegunungan sebagai identitas dan kekuatan daerah.</p></li>
-          </ol>
-          <div class="mt-6 grid gap-3 sm:grid-cols-3">
-            <div class="rounded-xl border border-brand-200 bg-brand-50 p-4 text-center"><i class="fa-solid fa-hand-holding-heart text-xl text-brand-600"></i><p class="mt-2 text-sm font-extrabold text-brand-800">Melayani</p></div>
-            <div class="rounded-xl border border-edu-200 bg-edu-50 p-4 text-center"><i class="fa-solid fa-scale-balanced text-xl text-edu-600"></i><p class="mt-2 text-sm font-extrabold text-edu-800">Berintegritas</p></div>
-            <div class="rounded-xl border border-gold-300 bg-gold-50 p-4 text-center"><i class="fa-solid fa-people-group text-xl text-gold-700"></i><p class="mt-2 text-sm font-extrabold text-gold-700">Bersama Membangun</p></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- TUPOKSI -->
-      <section id="tupoksi" class="reveal rounded-3xl border border-slate-200 bg-white p-6 shadow-card sm:p-8">
-        <p class="text-xs font-bold uppercase tracking-wider text-brand-600">Tugas Pokok dan Fungsi</p>
-        <h2 class="mt-1 text-2xl font-extrabold text-slate-900">Tupoksi Dinas</h2>
-        <div class="mt-5 rounded-2xl border-l-4 border-brand-500 bg-brand-50 p-5">
-          <p class="text-sm font-extrabold text-brand-800">Tugas Pokok</p>
-          <p class="mt-1 text-sm leading-relaxed text-brand-900/80">Membantu Gubernur melaksanakan urusan pemerintahan bidang pendidikan dan bidang kebudayaan yang menjadi kewenangan daerah provinsi serta tugas pembantuan yang ditugaskan kepada daerah.</p>
-        </div>
-        <p class="mt-6 text-sm font-extrabold text-slate-800">Fungsi</p>
-        <ul class="mt-3 grid gap-3 md:grid-cols-2">
-          <li class="flex gap-3 text-sm text-slate-600"><i class="fa-solid fa-circle-check mt-0.5 text-brand-500"></i>Perumusan kebijakan teknis bidang pendidikan menengah, pendidikan khusus, dan kebudayaan.</li>
-          <li class="flex gap-3 text-sm text-slate-600"><i class="fa-solid fa-circle-check mt-0.5 text-brand-500"></i>Pelaksanaan kebijakan pengelolaan SMA, SMK, dan SLB di wilayah provinsi.</li>
-          <li class="flex gap-3 text-sm text-slate-600"><i class="fa-solid fa-circle-check mt-0.5 text-brand-500"></i>Pemindahan pendidik dan tenaga kependidikan lintas kabupaten dalam satu provinsi.</li>
-          <li class="flex gap-3 text-sm text-slate-600"><i class="fa-solid fa-circle-check mt-0.5 text-brand-500"></i>Penerbitan izin pendidikan menengah dan pendidikan khusus yang diselenggarakan masyarakat.</li>
-          <li class="flex gap-3 text-sm text-slate-600"><i class="fa-solid fa-circle-check mt-0.5 text-brand-500"></i>Pengelolaan beasiswa dan bantuan pendidikan, termasuk yang bersumber dari Dana Otsus.</li>
-          <li class="flex gap-3 text-sm text-slate-600"><i class="fa-solid fa-circle-check mt-0.5 text-brand-500"></i>Pengelolaan cagar budaya, museum, dan pembinaan kesenian tradisional tingkat provinsi.</li>
-          <li class="flex gap-3 text-sm text-slate-600"><i class="fa-solid fa-circle-check mt-0.5 text-brand-500"></i>Pelaksanaan evaluasi dan pelaporan bidang pendidikan dan kebudayaan.</li>
-          <li class="flex gap-3 text-sm text-slate-600"><i class="fa-solid fa-circle-check mt-0.5 text-brand-500"></i>Pelaksanaan administrasi dinas dan fungsi lain yang diberikan oleh Gubernur.</li>
-        </ul>
-        <details class="mt-6 rounded-2xl border border-slate-200">
-          <summary class="flex items-center justify-between px-5 py-4 text-sm font-extrabold text-slate-800"><span><i class="fa-solid fa-scale-balanced mr-2 text-edu-600"></i>Dasar Hukum</span><i class="acc-icon fa-solid fa-chevron-down text-xs text-slate-400"></i></summary>
-          <ul class="space-y-2 border-t border-slate-100 px-5 py-4 text-sm text-slate-600">
-            <li>• Undang-Undang Nomor 20 Tahun 2003 tentang Sistem Pendidikan Nasional</li>
-            <li>• Undang-Undang Nomor 23 Tahun 2014 tentang Pemerintahan Daerah</li>
-            <li>• Undang-Undang Nomor 5 Tahun 2017 tentang Pemajuan Kebudayaan</li>
-            <li>• Undang-Undang Nomor 2 Tahun 2021 tentang Perubahan Kedua atas UU Otonomi Khusus bagi Provinsi Papua</li>
-            <li>• Undang-Undang Nomor 16 Tahun 2022 tentang Pembentukan Provinsi Papua Pegunungan</li>
-            <li>• Peraturan Daerah/Peraturan Gubernur tentang Kedudukan, Susunan Organisasi, Tugas dan Fungsi Perangkat Daerah <em>(nomor menyesuaikan dokumen resmi)</em></li>
-          </ul>
-        </details>
-      </section>
-
-      <!-- STRUKTUR -->
-      <section id="struktur" class="reveal rounded-3xl border border-slate-200 bg-white p-6 shadow-card sm:p-8">
-        <div class="flex flex-wrap items-end justify-between gap-3">
-          <div>
-            <p class="text-xs font-bold uppercase tracking-wider text-brand-600">Struktur Organisasi</p>
-            <h2 class="mt-1 text-2xl font-extrabold text-slate-900">Bagan Organisasi</h2>
-          </div>
-          <a href="#" data-soon="Bagan resmi (PDF) akan diunggah setelah SOTK ditetapkan." class="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-3 py-2 text-xs font-bold text-slate-700 hover:bg-slate-50"><i class="fa-solid fa-file-pdf text-rose-600"></i>Unduh Bagan PDF</a>
-        </div>
-
-        <div class="mt-8 overflow-x-auto pb-2 scroll-slim">
-          <div class="min-w-[760px] text-center">
-            <!-- Kepala -->
-            <div class="mx-auto w-64 rounded-2xl bg-gradient-to-br from-brand-700 to-brand-800 p-4 text-white shadow-float">
-              <p class="text-[11px] font-bold uppercase tracking-wider text-gold-300">Kepala Dinas (Plt.)</p>
-              <p class="mt-1 font-extrabold">Simon Sembor</p>
-            </div>
-            <div class="org-line-v h-6"></div>
-            <!-- Sekretaris + jabatan fungsional -->
-            <div class="relative mx-auto flex max-w-2xl items-start justify-center gap-6">
-              <div class="w-64 rounded-2xl border-2 border-edu-200 bg-edu-50 p-4">
-                <p class="text-[11px] font-bold uppercase tracking-wider text-edu-700">Sekretaris</p>
-                <p class="mt-1 text-sm font-bold text-slate-700">[Nama Pejabat]</p>
-                <div class="mt-3 space-y-1.5 text-left text-xs">
-                  <p class="rounded-lg bg-white px-3 py-1.5 font-semibold text-slate-600">Subbag Umum &amp; Kepegawaian</p>
-                  <p class="rounded-lg bg-white px-3 py-1.5 font-semibold text-slate-600">Subbag Keuangan &amp; Aset</p>
-                  <p class="rounded-lg bg-white px-3 py-1.5 font-semibold text-slate-600">Subbag Perencanaan &amp; Pelaporan</p>
-                </div>
-              </div>
-              <div class="w-48 self-center rounded-2xl border-2 border-dashed border-slate-300 bg-white p-3">
-                <p class="text-[11px] font-bold uppercase tracking-wider text-slate-500">Kelompok</p>
-                <p class="text-sm font-bold text-slate-700">Jabatan Fungsional</p>
-              </div>
-            </div>
-            <div class="org-line-v h-5"></div>
-            <!-- Bidang -->
-            <div class="org-row grid grid-cols-5 gap-3 pt-5" style="--l:10%;--r:10%">
-              <div class="rounded-2xl border border-slate-200 bg-white p-3 shadow-card"><span class="mx-auto flex h-9 w-9 items-center justify-center rounded-lg bg-brand-50 text-brand-600"><i class="fa-solid fa-school"></i></span><p class="mt-2 text-xs font-extrabold text-slate-800">Bidang Pembinaan SMA</p><p class="mt-1 text-[11px] text-slate-500">[Nama Kabid]</p></div>
-              <div class="rounded-2xl border border-slate-200 bg-white p-3 shadow-card"><span class="mx-auto flex h-9 w-9 items-center justify-center rounded-lg bg-brand-50 text-brand-600"><i class="fa-solid fa-screwdriver-wrench"></i></span><p class="mt-2 text-xs font-extrabold text-slate-800">Bidang Pembinaan SMK</p><p class="mt-1 text-[11px] text-slate-500">[Nama Kabid]</p></div>
-              <div class="rounded-2xl border border-slate-200 bg-white p-3 shadow-card"><span class="mx-auto flex h-9 w-9 items-center justify-center rounded-lg bg-brand-50 text-brand-600"><i class="fa-solid fa-hands-holding-child"></i></span><p class="mt-2 text-xs font-extrabold text-slate-800">Bidang Pendidikan Khusus</p><p class="mt-1 text-[11px] text-slate-500">[Nama Kabid]</p></div>
-              <div class="rounded-2xl border border-slate-200 bg-white p-3 shadow-card"><span class="mx-auto flex h-9 w-9 items-center justify-center rounded-lg bg-brand-50 text-brand-600"><i class="fa-solid fa-chalkboard-user"></i></span><p class="mt-2 text-xs font-extrabold text-slate-800">Bidang GTK</p><p class="mt-1 text-[11px] text-slate-500">[Nama Kabid]</p></div>
-              <div class="rounded-2xl border border-slate-200 bg-white p-3 shadow-card"><span class="mx-auto flex h-9 w-9 items-center justify-center rounded-lg bg-brand-50 text-brand-600"><i class="fa-solid fa-masks-theater"></i></span><p class="mt-2 text-xs font-extrabold text-slate-800">Bidang Kebudayaan</p><p class="mt-1 text-[11px] text-slate-500">[Nama Kabid]</p></div>
-            </div>
-            <div class="org-line-v h-6"></div>
-            <div class="mx-auto w-80 rounded-2xl border-2 border-gold-300 bg-gold-50 p-3">
-              <p class="text-[11px] font-bold uppercase tracking-wider text-gold-700">Unit Pelaksana Teknis Daerah</p>
-              <p class="text-sm font-bold text-slate-700">UPTD &amp; Cabang Dinas Wilayah</p>
-            </div>
-          </div>
-        </div>
-        <p class="mt-4 text-xs text-slate-500"><i class="fa-solid fa-circle-info mr-1"></i>Susunan bersifat sementara dan akan disesuaikan dengan Peraturan Gubernur tentang SOTK yang berlaku.</p>
-
-        <!-- Profil pejabat -->
-        <h3 class="mt-8 text-lg font-extrabold text-slate-900">Pejabat Struktural</h3>
-        <div id="pejabat" class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4"></div>
-      </section>
-
-      <!-- PIMPINAN -->
-      <section id="pimpinan" class="reveal overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-card">
-        <div class="grid md:grid-cols-[300px_minmax(0,1fr)]">
-          <div class="relative flex min-h-[340px] flex-col justify-end bg-gradient-to-b from-edu-100 via-brand-100 to-brand-200">
-            <!-- Ganti dengan foto resmi -->
-            <i class="fa-solid fa-user-tie absolute left-1/2 top-16 -translate-x-1/2 text-[130px] text-brand-700/25"></i>
-            <div class="relative bg-gradient-to-t from-brand-950/90 to-transparent p-5 pt-14 text-white">
-              <p class="text-xl font-extrabold">Simon Sembor</p>
-              <p class="text-sm font-semibold text-gold-300">Plt. Kepala Dinas</p>
-            </div>
-          </div>
-          <div class="p-6 sm:p-8">
-            <p class="text-xs font-bold uppercase tracking-wider text-brand-600">Profil Pimpinan</p>
-            <h2 class="mt-1 text-2xl font-extrabold text-slate-900">Simon Sembor</h2>
-            <p class="text-sm font-semibold text-slate-500">Pelaksana Tugas Kepala Dinas Pendidikan dan Kebudayaan Provinsi Papua Pegunungan</p>
-            <div class="mt-4 space-y-3 text-[15px] leading-relaxed text-slate-600">
-              <p>Sebagai Plt. Kepala Dinas, Simon Sembor memimpin pelaksanaan urusan pendidikan dan kebudayaan di delapan kabupaten Papua Pegunungan. Di bawah kepemimpinannya, dinas memfokuskan langkah pada penguatan pendataan guru dan murid, pengelolaan beasiswa Dana Otsus, pembangunan Baliem Global Training Center, serta digitalisasi pendidikan yang humanis dan berkarakter.</p>
-              <p>Ia menekankan pentingnya kolaborasi dengan pemerintah kabupaten, BPMP Papua, satuan pendidikan, tokoh adat, dan gereja untuk memastikan setiap anak pegunungan memperoleh layanan pendidikan yang layak.</p>
-            </div>
-            <dl class="mt-6 grid gap-3 text-sm sm:grid-cols-2">
-              <div class="rounded-xl bg-slate-50 p-4"><dt class="text-xs font-bold uppercase tracking-wider text-slate-400">Jabatan</dt><dd class="mt-1 font-bold text-slate-800">Plt. Kepala Dinas</dd></div>
-              <div class="rounded-xl bg-slate-50 p-4"><dt class="text-xs font-bold uppercase tracking-wider text-slate-400">Fokus Kebijakan</dt><dd class="mt-1 font-bold text-slate-800">Data, Beasiswa, Infrastruktur, Digitalisasi</dd></div>
-              <div class="rounded-xl bg-slate-50 p-4"><dt class="text-xs font-bold uppercase tracking-wider text-slate-400">Riwayat Pendidikan</dt><dd class="mt-1 font-semibold italic text-slate-500">[akan dilengkapi]</dd></div>
-              <div class="rounded-xl bg-slate-50 p-4"><dt class="text-xs font-bold uppercase tracking-wider text-slate-400">Riwayat Jabatan</dt><dd class="mt-1 font-semibold italic text-slate-500">[akan dilengkapi]</dd></div>
-            </dl>
-          </div>
-        </div>
-      </section>
+  <!-- PROGRAM -->
+  <section id="program" class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <p class="eyebrow text-brand-700">Program Kerja</p>
+    <h2 class="mt-3 max-w-xl text-3xl font-extrabold tracking-tight text-hutan-950">Tiga fokus kerja kami</h2>
+    <div class="mt-12 grid gap-10 md:grid-cols-3">
+      <div class="reveal border-t-2 border-brand-400 pt-6">
+        <i class="fa-solid fa-route text-xl text-brand-600"></i>
+        <h3 class="mt-4 text-lg font-bold text-hutan-950">Akses &amp; Pemerataan</h3>
+        <p class="mt-2 text-sm leading-relaxed text-hutan-500">Pembinaan SMA, SMK, dan SLB di delapan kabupaten serta pembangunan sekolah berasrama unggulan seperti Baliem Global Training Center.</p>
+      </div>
+      <div class="reveal border-t-2 border-brand-400 pt-6">
+        <i class="fa-solid fa-chalkboard-user text-xl text-brand-600"></i>
+        <h3 class="mt-4 text-lg font-bold text-hutan-950">Mutu Guru &amp; Pembelajaran</h3>
+        <p class="mt-2 text-sm leading-relaxed text-hutan-500">Pelatihan guru di wilayah 3T, penguatan literasi dan numerasi, serta pembelajaran digital yang tetap humanis.</p>
+      </div>
+      <div class="reveal border-t-2 border-brand-400 pt-6">
+        <i class="fa-solid fa-feather text-xl text-brand-600"></i>
+        <h3 class="mt-4 text-lg font-bold text-hutan-950">Pelestarian Budaya</h3>
+        <p class="mt-2 text-sm leading-relaxed text-hutan-500">Penyusunan muatan lokal bersama tokoh adat dan budayawan, serta pembinaan kesenian tradisional tingkat provinsi.</p>
+      </div>
     </div>
-  </div>
+  </section>
+
+  <!-- AJAKAN -->
+  <section class="px-4 pb-20 sm:px-6">
+    <div class="relative isolate mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 overflow-hidden rounded-xl bg-hutan-950 px-6 py-10 text-white sm:flex-row sm:items-center sm:px-10">
+      <div class="bg-grid absolute inset-0 -z-10"></div>
+      <h2 class="text-xl font-extrabold sm:text-2xl">Ingin bekerja sama atau bertanya?</h2>
+      <a href="kontak.html" class="btn btn-primary shrink-0">Hubungi Kami <i class="fa-solid fa-arrow-right text-xs"></i></a>
+    </div>
+  </section>
 </main>
 
 <div id="site-footer"></div>
@@ -226,21 +107,7 @@
 <script src="assets/js/data.js"></script>
 <script src="assets/js/layout.js"></script>
 <script>
-  const PEJABAT = [
-    ['Sekretaris Dinas', 'fa-user-tie'],
-    ['Kepala Bidang Pembinaan SMA', 'fa-school'],
-    ['Kepala Bidang Pembinaan SMK', 'fa-screwdriver-wrench'],
-    ['Kepala Bidang Pendidikan Khusus', 'fa-hands-holding-child'],
-    ['Kepala Bidang GTK', 'fa-chalkboard-user'],
-    ['Kepala Bidang Kebudayaan', 'fa-masks-theater'],
-    ['Kasubbag Umum & Kepegawaian', 'fa-folder-open'],
-    ['Kasubbag Keuangan & Aset', 'fa-coins'],
-  ];
-  document.getElementById('pejabat').innerHTML = PEJABAT.map(([j, i]) => `
-    <div class="flex items-center gap-3 rounded-2xl border border-slate-200 p-4">
-      <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-brand-100 to-edu-100 text-brand-700"><i class="fa-solid ${i}"></i></span>
-      <span class="min-w-0"><span class="block text-sm font-bold italic text-slate-500">[Nama Pejabat]</span><span class="block text-xs font-semibold text-slate-700">${j}</span></span>
-    </div>`).join('');
+  document.getElementById('kab').textContent = SITE.kabupaten.length + ' kabupaten: ' + SITE.kabupaten.join(', ');
 </script>
 </body>
 </html>

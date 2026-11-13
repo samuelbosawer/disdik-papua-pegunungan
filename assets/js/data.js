@@ -5,24 +5,27 @@ window.SITE = {
   singkat: 'Disdikbud Papua Pegunungan',
   alamat: 'Jl. Trikora, Wamena, Kabupaten Jayawijaya, Papua Pegunungan 99511',
   telepon: '(0969) 000-000',
-  fax: '(0969) 000-001',
   email: 'disdikbud@papuapegunungan.go.id',
   wa: '+62 800-0000-0000',
-  dbBeasiswa: 'https://dbbeasiswa.nokensoft.com',
-  lapor: 'https://www.lapor.go.id',
   sosmed: [
-    { nama: 'Facebook', icon: 'fa-facebook-f', url: '#', akun: 'Disdikbud Papua Pegunungan', warna: 'bg-[#1877f2]' },
-    { nama: 'Instagram', icon: 'fa-instagram', url: '#', akun: '@disdikbud.papuapegunungan', warna: 'bg-gradient-to-br from-[#f58529] via-[#dd2a7b] to-[#8134af]' },
-    { nama: 'YouTube', icon: 'fa-youtube', url: '#', akun: 'Disdikbud Papua Pegunungan', warna: 'bg-[#ff0000]' },
-    { nama: 'TikTok', icon: 'fa-tiktok', url: '#', akun: '@disdikbud.pp', warna: 'bg-slate-900' },
-    { nama: 'X / Twitter', icon: 'fa-x-twitter', url: '#', akun: '@disdikbudpp', warna: 'bg-slate-800' },
+    { nama: 'Facebook', icon: 'fa-facebook-f', url: '#', akun: 'Disdikbud Papua Pegunungan' },
+    { nama: 'Instagram', icon: 'fa-instagram', url: '#', akun: '@disdikbud.papuapegunungan' },
+    { nama: 'YouTube', icon: 'fa-youtube', url: '#', akun: 'Disdikbud Papua Pegunungan' },
   ],
   kabupaten: ['Jayawijaya', 'Lanny Jaya', 'Mamberamo Tengah', 'Nduga', 'Pegunungan Bintang', 'Tolikara', 'Yahukimo', 'Yalimo'],
 };
 
+// Foto berita: ilustrasi dari Unsplash, semuanya berlokasi di Wamena / Kabupaten Jayawijaya
+// (Unsplash License, bebas dipakai tanpa wajib atribusi). Ganti dengan foto kegiatan asli dinas bila sudah tersedia.
+//  1 Asso Myron        https://unsplash.com/photos/C3DTpqCdT6g  (Asotipo, Jayawijaya - kampung dari udara)
+//  2 Asso Myron        https://unsplash.com/photos/sxynOg9GT9o  (Wamena - perempuan muda dengan noken)
+//  3 Asso Myron        https://unsplash.com/photos/aP9vdmDJj9U  (Wamena - warga di depan honai)
+//  4 Fadhil Abhimantra https://unsplash.com/photos/3WrgrZhO2DM  (Wamena - warga membawa bendera Merah Putih)
+//  5 Jiwa              https://unsplash.com/photos/pmWc6DsQzdc  (Wamena - busana adat)
+//  6 Asso Myron        https://unsplash.com/photos/YrgFUWat1H0  (Wamena - warga di pagar kayu)
 window.BERITA = [
   {
-    id: 1, kategori: 'Pendataan', tanggal: '2026-11-10', penulis: 'Humas Disdikbud', img: 'https://picsum.photos/seed/pp-dapodik/900/600',
+    id: 1, kategori: 'Pendataan', tanggal: '2026-11-10', penulis: 'Humas Disdikbud', img: 'https://images.unsplash.com/photo-1671884424294-ec50954cf7bb?auto=format&fit=crop&w=900&h=600&q=75',
     judul: 'Disdikbud Perkuat Pendataan Guru dan Murid di 8 Kabupaten',
     ringkas: 'Penguatan data pokok pendidikan menjadi dasar percepatan peningkatan kualitas SDM di seluruh wilayah Papua Pegunungan.',
     isi: [
@@ -32,17 +35,17 @@ window.BERITA = [
     ],
   },
   {
-    id: 2, kategori: 'Beasiswa', tanggal: '2026-11-06', penulis: 'Bidang Beasiswa', img: 'https://picsum.photos/seed/pp-beasiswa/900/600',
+    id: 2, kategori: 'Beasiswa', tanggal: '2026-11-06', penulis: 'Bidang Beasiswa', img: 'https://images.unsplash.com/photo-1626619060754-bd673a90f322?auto=format&fit=crop&w=900&h=600&q=75',
     judul: 'Penyaluran Bantuan Studi Akhir bagi Mahasiswa Asal Papua Pegunungan',
-    ringkas: 'Bantuan studi akhir bersumber dari Dana Otsus disalurkan kepada mahasiswa yang telah terverifikasi melalui Database Beasiswa.',
+    ringkas: 'Bantuan studi akhir bersumber dari Dana Otsus disalurkan kepada mahasiswa yang telah lolos verifikasi.',
     isi: [
       'Pemerintah Provinsi Papua Pegunungan melalui Disdikbud kembali menyalurkan bantuan studi akhir bagi mahasiswa Orang Asli Papua yang sedang menyelesaikan tugas akhir di dalam maupun luar negeri.',
-      'Seluruh proses pendaftaran, verifikasi berkas, hingga pelaporan studi dilakukan melalui aplikasi Database Beasiswa Papua Pegunungan agar penyaluran tepat sasaran dan dapat dipertanggungjawabkan.',
-      'Mahasiswa diimbau untuk memperbarui data dan melengkapi laporan semester secara berkala melalui akun masing-masing.',
+      'Seluruh proses pendaftaran, verifikasi berkas, hingga pelaporan studi dilakukan secara tertib agar penyaluran tepat sasaran dan dapat dipertanggungjawabkan.',
+      'Mahasiswa diimbau untuk memperbarui data dan melengkapi laporan semester secara berkala kepada dinas.',
     ],
   },
   {
-    id: 3, kategori: 'Infrastruktur', tanggal: '2026-10-28', penulis: 'Humas Disdikbud', img: 'https://picsum.photos/seed/pp-baliem/900/600',
+    id: 3, kategori: 'Infrastruktur', tanggal: '2026-10-28', penulis: 'Humas Disdikbud', img: 'https://images.unsplash.com/photo-1638584165073-df0851b7c254?auto=format&fit=crop&w=900&h=600&q=75',
     judul: 'Progres Pembangunan Baliem Global Training Center di Jayawijaya',
     ringkas: 'Sekolah berasrama yang dibangun dengan alokasi Dana Otsus ini disiapkan menjadi pusat pendidikan unggulan di wilayah pegunungan.',
     isi: [
@@ -52,7 +55,7 @@ window.BERITA = [
     ],
   },
   {
-    id: 4, kategori: 'Digitalisasi', tanggal: '2026-10-20', penulis: 'Bidang SMA', img: 'https://picsum.photos/seed/pp-digital/900/600',
+    id: 4, kategori: 'Digitalisasi', tanggal: '2026-10-20', penulis: 'Bidang SMA', img: 'https://images.unsplash.com/photo-1735301739934-e2cf15fe9df5?auto=format&fit=crop&w=900&h=600&q=75',
     judul: 'Disdikbud dan BPMP Papua Dorong Pendidikan Digital yang Humanis',
     ringkas: 'Kerja sama penguatan pembelajaran berbasis digital sekaligus pendidikan karakter bagi guru SMA, SMK, dan SLB.',
     isi: [
@@ -62,7 +65,7 @@ window.BERITA = [
     ],
   },
   {
-    id: 5, kategori: 'Kebudayaan', tanggal: '2026-10-12', penulis: 'Bidang Kebudayaan', img: 'https://picsum.photos/seed/pp-budaya/900/600',
+    id: 5, kategori: 'Kebudayaan', tanggal: '2026-10-12', penulis: 'Bidang Kebudayaan', img: 'https://images.unsplash.com/photo-1683713601159-0b22f5116f88?auto=format&fit=crop&w=900&h=600&q=75',
     judul: 'Pelestarian Budaya Lembah Baliem Masuk Muatan Lokal Sekolah',
     ringkas: 'Nilai-nilai budaya pegunungan diintegrasikan dalam muatan lokal untuk memperkuat identitas peserta didik.',
     isi: [
@@ -71,7 +74,7 @@ window.BERITA = [
     ],
   },
   {
-    id: 6, kategori: 'GTK', tanggal: '2026-10-03', penulis: 'Bidang GTK', img: 'https://picsum.photos/seed/pp-guru/900/600',
+    id: 6, kategori: 'GTK', tanggal: '2026-10-03', penulis: 'Bidang GTK', img: 'https://images.unsplash.com/photo-1684318250061-aa6408deed55?auto=format&fit=crop&w=900&h=600&q=75',
     judul: 'Peningkatan Kompetensi Guru Daerah Terpencil',
     ringkas: 'Program pelatihan guru di wilayah 3T difokuskan pada literasi, numerasi, dan pembelajaran berdiferensiasi.',
     isi: [
@@ -79,24 +82,6 @@ window.BERITA = [
       'Pelatihan menitikberatkan pada penguatan literasi dan numerasi serta strategi mengajar di kelas dengan kemampuan siswa yang beragam.',
     ],
   },
-];
-
-window.PENGUMUMAN = [
-  { tanggal: '2026-11-11', judul: 'Perpanjangan Batas Unggah Laporan Semester Penerima Beasiswa', tag: 'Beasiswa', penting: true },
-  { tanggal: '2026-11-08', judul: 'Seleksi Calon Siswa Baliem Global Training Center Tahun Ajaran 2027/2028', tag: 'Seleksi', penting: true },
-  { tanggal: '2026-11-01', judul: 'Jadwal Verifikasi Data Dapodik Semester Ganjil', tag: 'Pendataan' },
-  { tanggal: '2026-10-25', judul: 'Pengumuman Hasil Seleksi Administrasi Program ADIK 2026', tag: 'Beasiswa' },
-  { tanggal: '2026-10-18', judul: 'Rencana Umum Pengadaan (RUP) Disdikbud Tahun Anggaran 2027', tag: 'Pengadaan' },
-  { tanggal: '2026-10-10', judul: 'Rekrutmen Tenaga Pendamping Pendataan (Non-ASN)', tag: 'Lowongan' },
-];
-
-window.AGENDA = [
-  { tanggal: '2026-11-17', jam: '09.00 WIT', judul: 'Rapat Koordinasi Kepala SMA/SMK se-Papua Pegunungan', lokasi: 'Aula Disdikbud, Wamena' },
-  { tanggal: '2026-11-20', jam: '08.30 WIT', judul: 'Bimtek Operator Dapodik Gelombang II', lokasi: 'Kab. Yahukimo' },
-  { tanggal: '2026-11-25', jam: '08.00 WIT', judul: 'Peringatan Hari Guru Nasional', lokasi: 'Lapangan Pendidikan, Wamena' },
-  { tanggal: '2026-11-28', jam: '10.00 WIT', judul: 'Verifikasi Faktual Calon Penerima Beasiswa', lokasi: 'Kab. Pegunungan Bintang' },
-  { tanggal: '2026-12-03', jam: '09.00 WIT', judul: 'Festival Budaya Pelajar Pegunungan', lokasi: 'Kab. Jayawijaya' },
-  { tanggal: '2026-12-10', jam: '09.00 WIT', judul: 'Evaluasi Program Kerja Tahun 2026', lokasi: 'Aula Disdikbud, Wamena' },
 ];
 
 // Utilitas kecil yang dipakai banyak halaman
